@@ -1,7 +1,7 @@
 theme: minima
 title: Hakoniwa Explorer Plus Guide
 author: TibyAndy
-description: Hakoniwa Explorer Plus Guide
+description: All this guide content is licensed under CC BY-SA 4.0
 markdown: kramdown #GFM
 plugins:
   - jemoji
@@ -11,3 +11,7 @@ titles_from_headings:
   collections: false
 header_pages:
  - index.md
+ - about/what-is.md
+ - topics.md
+twitter_username: tibyandy
+github_username: tibyandy

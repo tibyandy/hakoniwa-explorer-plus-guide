@@ -1,10 +1,11 @@
-## What is Hakoniwa Explorer Plus?
+# What is it?
+## Hakoniwa Explorer Plus
 
 Hakoniwa Explorer Plus is an isometric voxel art action RPG game developed by suxamethonium and published by PLAYISM. It features a whole range of cute monster girls and a certain degree of freedom in interacting with the world, the story and the NPCs. It was made available on Steam on June 6, 2018, and a Nintendo Switch version came out in 2020.
 
 The game earned was developed using <a href="#hsp">Hot Soup Processor programming language (HSP)</a> and earned two awards from the 2015 and 2016 HSP Program Contest: "Active Gaming Media PLAYISM Award" and "Nico Nico Self-made Game Festival Award".
 
-### Developer Comment
+## Developer Comment
 
 This is Suxa (suxamethonium), creator of Hakoniwa Explorer Plus.
 
@@ -14,7 +15,7 @@ Then I somehow got a publisher attached, and now it seems the game has actually 
 
 I appear in the game myself, so if you like, please come find me and say hi.
 
-### References
+## References
 - <a id="hsp"></a>HSP3 Programming Language: <http://lhsp.s206.xrea.com/index.en.html>
 - TV Tropes: <https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/HakoniwaExplorerPlus>
 - (JP) Wikipedia: <https://ja.wikipedia.org/wiki/箱庭えくすぷろーら>
