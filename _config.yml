@@ -1,3 +1,13 @@
 theme: minima
 title: Hakoniwa Explorer Plus Guide
-description: TibyAndy's custom guide to the Nintendo Switch Hakoniwa Explorer Plus game!
+author: TibyAndy
+description: Hakoniwa Explorer Plus Guide
+markdown: GFM
+plugins:
+ - jemoji
+titles_from_headings:
+  enabled:     true
+  strip_title: false
+  collections: false
+header_pages:
+ - index.md
