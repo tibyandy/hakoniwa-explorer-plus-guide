@@ -1,7 +1,15 @@
 # Hakoniwa Explorer Plus Guide
 TibyAndy's custom guide to the Nintendo Switch Hakoniwa Explorer Plus game!
 
-## Topics
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tXQDw8vBLcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Official Links
+
+- Steam: https://store.steampowered.com/app/705280/Hakoniwa_Explorer_Plus/
+- Nintendo eShop: https://www.nintendo.com/store/products/hakoniwa-explorer-plus-switch/
+- Publisher: https://playism.com/en/game/hakoniwa/
+
+### Guide Topics
 - [About](about/what-is.md)
 - [World](world/map.md)
 - Characters
