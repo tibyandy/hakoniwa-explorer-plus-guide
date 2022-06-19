@@ -2,12 +2,12 @@ theme: minima
 title: Hakoniwa Explorer Plus Guide
 author: TibyAndy
 description: Hakoniwa Explorer Plus Guide
-markdown: GFM
+markdown: kramdown #GFM
 plugins:
- - jemoji
+  - jemoji
 titles_from_headings:
   enabled:     true
-  strip_title: false
+  strip_title: true
   collections: false
 header_pages:
  - index.md

@@ -15,11 +15,11 @@ Then I somehow got a publisher attached, and now it seems the game has actually 
 I appear in the game myself, so if you like, please come find me and say hi.
 
 ### References
-- <a id="hsp"></a>HSP3 Programming Language: http://lhsp.s206.xrea.com/index.en.html
-- TV Tropes: https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/HakoniwaExplorerPlus
-- (JP) Wikipedia: https://ja.wikipedia.org/wiki/%E7%AE%B1%E5%BA%AD%E3%81%88%E3%81%8F%E3%81%99%E3%81%B7%E3%82%8D%E3%83%BC%E3%82%89
-- (JP) HSP Program Contest 2015 Winning Works: http://hsp.tv/contest2015/cntst_fresult.html#1042
-- (JP) HSP Program Contest 2016 Winning Works: http://hsp.tv/contest2016/cntst_fresult.html#1042
-- (JP) suxamethonium User Info on Onionsoft: http://dev.onionsoft.net/seed/info.ax?user=285
-- (JP) suxamethonium Pixiv: https://www.pixiv.net/en/users/625753
-- (JP) suxamethonium Youtube: https://www.youtube.com/channel/UCUkCvWAWdUNhBSC8x2HdQOA
+- <a id="hsp"></a>HSP3 Programming Language: <http://lhsp.s206.xrea.com/index.en.html>
+- TV Tropes: <https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/HakoniwaExplorerPlus>
+- (JP) Wikipedia: <https://ja.wikipedia.org/wiki/箱庭えくすぷろーら>
+- (JP) HSP Program Contest 2015 Winning Works: <http://hsp.tv/contest2015/cntst_fresult.html#1042>
+- (JP) HSP Program Contest 2016 Winning Works: <http://hsp.tv/contest2016/cntst_fresult.html#1042>
+- (JP) suxamethonium User Info on Onionsoft: <http://dev.onionsoft.net/seed/info.ax?user=285>
+- (JP) suxamethonium Pixiv: <https://www.pixiv.net/en/users/625753>
+- (JP) suxamethonium Youtube: <https://www.youtube.com/channel/UCUkCvWAWdUNhBSC8x2HdQOA>
