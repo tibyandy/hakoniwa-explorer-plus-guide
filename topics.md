@@ -4,7 +4,7 @@
 - [World](game/map.md)
 - [Characters](game/characters.md)
 - [Gameplay](game/gameplay.md)
-- [Items](game/items.md)
+- [Equipments and Items](game/items.md)
 - [Achievements](game/achievements.md)
 
 ## Production
