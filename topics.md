@@ -1,8 +1,11 @@
 # Topics
 ## Game elements
 - [Story](game/story.md)
-- [World](game/map.md)
-- [Characters](game/characters.md)
+- [World Regions](game/map.md)
+  - [Towns](game/towns.md)
+  - [Shops](game/shops.md)
+- [Enemies](game/enemies.md)
+- [Bosses](game/bosses.md)
 - [Gameplay](game/gameplay.md)
 - [Equipments and Items](game/items.md)
 - [Achievements](game/achievements.md)
