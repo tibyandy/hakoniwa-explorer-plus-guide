@@ -40,150 +40,43 @@ table:not(.horiz) tr:first-child th { vertical-align: bottom; padding: 2px !impo
 ## Weapon and Guard Shops
 
 <table class="top">
-<tr>
+<tbody><tr>
 <th><img title="Firsttown" src="t/Firsttown.png">Firsttown
-<th><img title="Totory" src="t/Totory.png">Totory
-<th><img title="Wettingham" src="t/Wettingham.png">Wettingham
-<th><img title="Shuzo" src="t/Shuzo.png">Shuzo
-<th><img title="Chillbrae" src="t/Chillbrae.png">Chillbrae
-<th><img title="Stiffchub City" src="t/Stiffchub_City.png">Stiffchub
-<th><img title="Mundus Arbos" src="t/Mundus_Arbos.png">M. Arbos
-<tr><td>
-
-**Sword**  
-Normal  
-Steel
-
-**Club**  
-Normal  
-Spiked  
-Hardcore  
-  
-**Bat**  
-Metal  
-Gold<td>
-
-**Sword**  
-Normal  
-Steel
-
-**Claws**  
-Normal  
-Poison  
-Paralyze  
-Steel  
-Beast King<td>
-
-**Sword**  
-Normal  
-Bullseye
-
-**Bow**  
-Normal  
-Three-way  
-Rapidfire<td>
-
-**Sword**  
-Normal  
-Flame
-
-**Ax**  
-Lumberjack  
-Battle  
-Big-ass<td>
-
-**Sword**  
-Normal  
-Freeze<td>
-
-**Sword**  
-Normal  
-Steel
-
-**Sickle**  
-Grass  
-Dodgy  
-Decapitating<td>
-
-**Sword**  
-Normal  
-Glass
-
-**Staff**  
-Storm  
-Flame  
-Freeze  
-Thunder<tr><td>
-
-**Shield**  
-Pot Lid  
-Normal  
-Steel
-
-**Armor**  
-Normal  
-Steel  
-Sturdy<td>
-
-**Shield**  
-Pot Lid  
-Normal  
-Steel
-
-**Ring**  
-Experience  
-Pirate  
-Antisuck  
-Evasion  
-Sacred<td>
-
-**Shield**  
-Pot Lid  
-Normal  
-Holy
-
-**Shoes**  
-Normal  
-Idaten  
-Sturdy  
-Beerok<td>  
-
-**Shield**  
-Pot Lid  
-Normal  
-Heat-proof
-
-**Gloves**  
-Normal  
-Steel  
-Sturdy<td>
-
-**Shield**  
-Pot Lid  
-Normal  
-Cold-proof
-
-**Hat**  
-Winged  
-Safety
-
-**Helmet**  
-Steel<td>
-
-**Shield**  
-Pot Lid  
-Normal  
-Steel<td>
-
-**Shield**  
-Pot Lid  
-Normal  
-
-**Cape**  
-Adventure  
-Fairy  
-King  
-Zephyr</table>
+</th><th><img title="Totory" src="t/Totory.png">Totory
+</th><th><img title="Wettingham" src="t/Wettingham.png">Wettingham
+</th><th><img title="Shuzo" src="t/Shuzo.png">Shuzo
+</th><th><img title="Chillbrae" src="t/Chillbrae.png">Chillbrae
+</th><th><img title="Stiffchub City" src="t/Stiffchub_City.png">Stiffchub
+</th><th><img title="Mundus Arbos" src="t/Mundus_Arbos.png">M. Arbos
+</th></tr><tr><td>
+<p><b>Sword</b><br>Normal<br>Steel</p>
+<p><b>Club</b><br>Normal<br>Spiked<br>Hardcore</p>
+<p><b>Bat</b><br>Metal<br>Gold</p></td><td><p></p>
+<p><b>Sword</b><br>Normal<br>Steel</p>
+<p><b>Claws</b><br>Normal<br>Poison<br>Paralyze<br>Steel<br>Beast King</p></td><td><p></p>
+<p><b>Sword</b><br>Normal<br>Bullseye</p>
+<p><b>Bow</b><br>Normal<br>Three-way<br>Rapidfire</p></td><td><p></p>
+<p><b>Sword</b><br>Normal<br>Flame</p>
+<p><b>Ax</b><br>Lumberjack<br>Battle<br>Big-ass</p></td><td><p></p>
+<p><b>Sword</b><br>Normal<br>Freeze</p></td><td><p></p>
+<p><b>Sword</b><br>Normal<br>Steel</p>
+<p><b>Sickle</b><br>Grass<br>Dodgy<br>Decapitating</p></td><td><p></p>
+<p><b>Sword</b><br>Normal<br>Glass</p>
+<p><b>Staff</b><br>Storm<br>Flame<br>Freeze<br>Thunder</p></td></tr><tr><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
+<p><b>Armor</b><br>Normal<br>Steel<br>Sturdy</p></td><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
+<p><b>Ring</b><br>Experience<br>Pirate<br>Antisuck<br>Evasion<br>Sacred</p></td><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal<br>Holy</p>
+<p><b>Shoes</b><br>Normal<br>Idaten<br>Sturdy<br>Beerok</p></td><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal<br>Heat-proof</p>
+<p><b>Gloves</b><br>Normal<br>Steel<br>Sturdy</p></td><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal<br>Cold-proof</p>
+<p><b>Hat</b><br>Winged<br>Safety</p>
+<p><b>Helmet</b><br>Steel</p></td><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p></td><td><p></p>
+<p><b>Shield</b><br>Pot Lid<br>Normal</p>
+<p><b>Cape</b><br>Adventure<br>Fairy<br>King<br>Zephyr</p></td></tr></tbody></table>
 
 ## Items Shops
 
