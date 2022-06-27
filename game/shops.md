@@ -41,42 +41,56 @@ table:not(.horiz) tr:first-child th { vertical-align: bottom; padding: 2px !impo
 
 <table class="top">
 <tbody><tr>
-<th><img title="Firsttown" src="t/Firsttown.png">Firsttown
-</th><th><img title="Totory" src="t/Totory.png">Totory
-</th><th><img title="Wettingham" src="t/Wettingham.png">Wettingham
-</th><th><img title="Shuzo" src="t/Shuzo.png">Shuzo
-</th><th><img title="Chillbrae" src="t/Chillbrae.png">Chillbrae
-</th><th><img title="Stiffchub City" src="t/Stiffchub_City.png">Stiffchub
-</th><th><img title="Mundus Arbos" src="t/Mundus_Arbos.png">M. Arbos
-</th></tr><tr><td>
-<p><b>Sword</b><br>Normal<br>Steel</p>
-<p><b>Club</b><br>Normal<br>Spiked<br>Hardcore</p>
-<p><b>Bat</b><br>Metal<br>Gold</p></td><td><p></p>
-<p><b>Sword</b><br>Normal<br>Steel</p>
-<p><b>Claws</b><br>Normal<br>Poison<br>Paralyze<br>Steel<br>Beast King</p></td><td><p></p>
-<p><b>Sword</b><br>Normal<br>Bullseye</p>
-<p><b>Bow</b><br>Normal<br>Three-way<br>Rapidfire</p></td><td><p></p>
-<p><b>Sword</b><br>Normal<br>Flame</p>
-<p><b>Ax</b><br>Lumberjack<br>Battle<br>Big-ass</p></td><td><p></p>
-<p><b>Sword</b><br>Normal<br>Freeze</p></td><td><p></p>
-<p><b>Sword</b><br>Normal<br>Steel</p>
-<p><b>Sickle</b><br>Grass<br>Dodgy<br>Decapitating</p></td><td><p></p>
-<p><b>Sword</b><br>Normal<br>Glass</p>
-<p><b>Staff</b><br>Storm<br>Flame<br>Freeze<br>Thunder</p></td></tr><tr><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
-<p><b>Armor</b><br>Normal<br>Steel<br>Sturdy</p></td><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
-<p><b>Ring</b><br>Experience<br>Pirate<br>Antisuck<br>Evasion<br>Sacred</p></td><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal<br>Holy</p>
-<p><b>Shoes</b><br>Normal<br>Idaten<br>Sturdy<br>Beerok</p></td><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal<br>Heat-proof</p>
-<p><b>Gloves</b><br>Normal<br>Steel<br>Sturdy</p></td><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal<br>Cold-proof</p>
-<p><b>Hat</b><br>Winged<br>Safety</p>
-<p><b>Helmet</b><br>Steel</p></td><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p></td><td><p></p>
-<p><b>Shield</b><br>Pot Lid<br>Normal</p>
-<p><b>Cape</b><br>Adventure<br>Fairy<br>King<br>Zephyr</p></td></tr></tbody></table>
+  <th><img title="Firsttown"      src="t/Firsttown.png"     >Firsttown</th>
+  <th><img title="Totory"         src="t/Totory.png"        >Totory</th>
+  <th><img title="Wettingham"     src="t/Wettingham.png"    >Wettingham</th>
+  <th><img title="Shuzo"          src="t/Shuzo.png"         >Shuzo</th>
+  <th><img title="Chillbrae"      src="t/Chillbrae.png"     >Chillbrae</th>
+  <th><img title="Stiffchub City" src="t/Stiffchub_City.png">Stiffchub</th>
+  <th><img title="Mundus Arbos"   src="t/Mundus_Arbos.png"  >M. Arbos</th>
+</tr><tr><td>
+  <p><b>Sword</b><br>Normal<br>Steel</p>
+  <p><b>Club</b><br>Normal<br>Spiked<br>Hardcore</p>
+  <p><b>Bat</b><br>Metal<br>Gold</p>
+</td><td>
+  <p><b>Sword</b><br>Normal<br>Steel</p>
+  <p><b>Claws</b><br>Normal<br>Poison<br>Paralyze<br>Steel<br>Beast King</p>
+</td><td>
+  <p><b>Sword</b><br>Normal<br>Bullseye</p>
+  <p><b>Bow</b><br>Normal<br>Three-way<br>Rapidfire</p>
+</td><td>
+  <p><b>Sword</b><br>Normal<br>Flame</p>
+  <p><b>Ax</b><br>Lumberjack<br>Battle<br>Big-ass</p>
+</td><td>
+  <p><b>Sword</b><br>Normal<br>Freeze</p>
+</td><td>
+  <p><b>Sword</b><br>Normal<br>Steel</p>
+  <p><b>Sickle</b><br>Grass<br>Dodgy<br>Decapitating</p>
+</td><td>
+  <p><b>Sword</b><br>Normal<br>Glass</p>
+  <p><b>Staff</b><br>Storm<br>Flame<br>Freeze<br>Thunder</p>
+</td></tr><tr><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
+  <p><b>Armor</b><br>Normal<br>Steel<br>Sturdy</p>
+</td><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
+  <p><b>Ring</b><br>Experience<br>Pirate<br>Antisuck<br>Evasion<br>Sacred</p>
+</td><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal<br>Holy</p>
+  <p><b>Shoes</b><br>Normal<br>Idaten<br>Sturdy<br>Beerok</p>
+</td><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal<br>Heat-proof</p>
+  <p><b>Gloves</b><br>Normal<br>Steel<br>Sturdy</p>
+</td><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal<br>Cold-proof</p>
+  <p><b>Hat</b><br>Winged<br>Safety</p>
+  <p><b>Helmet</b><br>Steel</p>
+</td><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal<br>Steel</p>
+</td><td>
+  <p><b>Shield</b><br>Pot Lid<br>Normal</p>
+  <p><b>Cape</b><br>Adventure<br>Fairy<br>King<br>Zephyr</p>
+</td></tr></tbody></table>
 
 ## Items Shops
 
@@ -107,11 +121,11 @@ table:not(.horiz) tr:first-child th { vertical-align: bottom; padding: 2px !impo
 
 Nawaoki item and guard shops differ greatly from other town shops.
 
-<table class="horiz">
-<tr><th rowspan="3"><img src="t/Nawaoki.png"><th>Bodysuits
-<td>Sukumizu<td>White Sukumizu<td>Battle Tights<td>Bunny Suit<td>Lucktard
-<tr><th rowspan="2">Food
-<td>Raw Crab<td>Raw Fish<td>Raw Octopus<td>Raw Shrimp<td>Raw Squid
-<tr>
-<td>Blanched Crab<td>Grilled Fish<td>Grilled Octopus<td>Fried Prawns<td>Grilled Squid
-</table>
+<table class="horiz"><tr>
+  <th rowspan="3"><img src="t/Nawaoki.png"></th>
+  <th>Bodysuits</th><td>Sukumizu</td><td>White Sukumizu</td><td>Battle Tights</td><td>Bunny Suit</td><td>Lucktard</td>
+</tr><tr>
+  <th rowspan="2">Food</th><td>Raw Crab</td><td>Raw Fish</td><td>Raw Octopus</td><td>Raw Shrimp</td><td>Raw Squid</td>
+</tr><tr>
+  <td>Blanched Crab</td><td>Grilled Fish</td><td>Grilled Octopus</td><td>Fried Prawns</td><td>Grilled Squid</td>
+</tr></table>
