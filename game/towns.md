@@ -1,7 +1,7 @@
 # Towns
-:warning: work in progress!
-
 See also: [Regions](map.md), [Shops](shops.md)
+
+:warning: work in progress!
 
 <style>
 table { width: auto }

@@ -1,4 +1,6 @@
 # Equipments and Items
+See also: [Shops](shops.md)
+
 :warning: work in progress!
 
 <style>
@@ -186,4 +188,4 @@ td:last-child, th:last-child  { padding-right: 16px !important }
 | Trash   | ![wet scroll](i/wet_scroll.png)                 | Wet Scroll         | [Trash]
 
 ## References
-This page uses some information from the Hakoniwa Explorer Plus Wiki: https://hakoniwa-explorer-plus.fandom.com/
+This page uses some information from the Hakoniwa Explorer Plus Wiki: <https://hakoniwa-explorer-plus.fandom.com>

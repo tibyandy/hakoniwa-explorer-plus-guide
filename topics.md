@@ -1,18 +1,18 @@
 # Topics
 ## Game elements
-- [Story](game/story.md)
+- Story
 - [World Regions](game/map.md)
   - [Towns](game/towns.md)
   - [Shops](game/shops.md)
 - [Enemies](game/enemies.md)
 - [Bosses](game/bosses.md)
-- [Gameplay](game/gameplay.md)
+- Gameplay
 - [Equipments and Items](game/items.md)
-- [Achievements](game/achievements.md)
+- Achievements
 
 ## Production
 - [About the game](about/what-is.md)
-- [Artwork](about/artwork.md)
-- [Development](about/development.md)
-- [Music](about/music.md)
-- [Credits](about/credits.md)
+- Artwork
+- Development
+- Music
+- Credits
