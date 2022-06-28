@@ -11,7 +11,5 @@ titles_from_headings:
   collections: false
 header_pages:
  - index.md
- - about/what-is.md
- - topics.md
 twitter_username: tibyandy
 github_username: tibyandy
