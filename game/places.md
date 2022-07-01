@@ -5,13 +5,13 @@ See also: [Regions](regions.md), [Towns](towns.md), [Shops](shops.md)
 
 <style>
 td { padding-top: 0 !important; padding-bottom: 0 !important }
-img { display: block; margin: 1px }
+td img { display: block; width: 68px !important }
 tr { position: relative }
-tr :nth-child(1) { padding: 0 !important }
+tr>:nth-child(1) { padding: 1px !important; width: 68px !important }
 tr td:nth-child(2) { padding-top: 2.5ch !important }
 tr td:nth-child(2)::before { content: '(' }
 tr td:nth-child(2)::after { content: ')' }
-tr td:nth-child(3) { padding-top: 1.5ch !important; position: absolute; left: 70px; border-color: transparent !important; background: transparent !important }
+tr td:nth-child(3) { padding-top: 1.25ch !important; position: absolute; left: 70px; border-color: transparent !important; background: transparent !important }
 tr th:nth-child(3) { visibility: hidden; position: absolute; left: 0; border: none }
 </style>
 
@@ -42,8 +42,8 @@ tr th:nth-child(3) { visibility: hidden; position: absolute; left: 0; border: no
 | ![](p/Profundum_Trench.png)      | Profundum          | Profundum Trench      |         8         |        1         |       14        |
 | ![](p/Encore_Watt_Ruins.png)     | Phucken Marsh      | Encore Watt Ruins     |         9         |        5         |       14        |
 | ![](p/Gewfoff_Beach.png)         | Phucken Marsh      | Gewfoff Beach         |         3         |        4         |        7        |
+| ![](p/Grottee_Marsh.png)         | Phucken Marsh      | Grottee Marsh         |         4         |        2         |       10        |
 | ![](p/Notternback_Forest_C.png)  | Phucken Marsh      | Notternback Forest C  |         2         |        1         |       10        |
-| ![](p/Phucken_Marsh.png)         | Phucken Marsh      | Phucken Marsh         |         4         |        2         |       10        |
 | ![](p/Phucken_Marsh.png)         | Phucken Marsh      | Phucken Marsh         |         4         |        4         |        9        |
 | ![](p/Stiffchub_Mines.png)       | Phucken Marsh      | Stiffchub Mines       |         5         |        5         |     10/16?      |
 | ![](p/Tepid_Springs.png)         | Phucken Marsh      | Tepid Springs         |                   |                  |                 |

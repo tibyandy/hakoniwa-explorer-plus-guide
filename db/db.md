@@ -31,16 +31,16 @@
 | Link     | First region           | !Dreem Beach           | Profundum region       |      2 |         3 |      8 |
 | Link     | First region           | !Notternback Forest A  | Notternback Forest     |      1 |         3 |     10 |
 | Link     | First region           | !Toarch Cave           | Totory Dunes region    |      2 |         4 |      8 |
-| Link     | Grotee Marsh region    | !Notternback Forest C  | Notternback Forest     |      2 |         1 |     10 |
-| Link     | Grotee Marsh region    | !Stiffchub Mines       | Stiffchub Lake region  |      5 |         5 | 10/16? |
+| Link     | Phucken Marsh region   | !Notternback Forest C  | Notternback Forest     |      2 |         1 |     10 |
+| Link     | Phucken Marsh region   | !Stiffchub Mines       | Stiffchub Lake region  |      5 |         5 | 10/16? |
 | Link     | Maggy region           | !Maggy Mines           | Hiyass Mountain region |      4 |         2 |     14 |
 | Link     | Maggy region           | !Notternback Forest B  | Notternback Forest     |      1 |         1 |     10 |
 | Link     | Profundum region       | !Gewfoff Beach         | Phucken Marsh region   |      3 |         4 |      7 |
 | Link     | Totory Dunes region    | !Hopstep               | Maggy region           |      3 |         3 |      7 |
 | Dungeon  | First region           | !Firstbridge           |                        |      1 |         3 |      4 |
 | Dungeon  | First region           | !Twinkell Lighthouse   |                        |      2 |         4 |      8 |
-| Dungeon  | Grotee Marsh region    | !Encore Watt Ruins     |                        |      9 |         5 |     14 |
-| Dungeon  | Grotee Marsh region    | !Phucken Marsh         |                        |      4 |         2 |     10 |
+| Dungeon  | Phucken Marsh region   | !Encore Watt Ruins     |                        |      9 |         5 |     14 |
+| Dungeon  | Phucken Marsh region   | !Grottee Marsh         |                        |      4 |         2 |     10 |
 | Dungeon  | Hiyass Mountain region | !Dafuq Abyss           |                        |     11 |         5 |     14 |
 | Dungeon  | Hiyass Mountain region | !Hiyass Mountain       |                        |      6 |         4 |      9 |
 | Dungeon  | Maggy region           | !Maggy Cave            |                        |      5 |         5 |     14 |
@@ -54,7 +54,7 @@
 | Dungeon  | Totory Dunes region    | !Totory Dunes          |                        |      3 |         2 |     10 |
 | RDungeon | Chillbrae region       | !Sweetums Hill         |                        |        |           |        |
 | RDungeon | First region           | !Weerdough Plains      |                        |        |           |        |
-| RDungeon | Grotee Marsh region    | !Tepid Springs         |                        |        |           |        |
+| RDungeon | Phucken Marsh region   | !Tepid Springs         |                        |        |           |        |
 | RDungeon | Maggy region           | !Maggy Temple          |                        |        |           |        |
 
 
