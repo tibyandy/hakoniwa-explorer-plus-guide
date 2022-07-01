@@ -1,11 +1,9 @@
-# World Map
-See also: [Towns](towns.md), [Shops](shops.md)
+# Regions
+See also: [Towns](towns.md), [Shops](shops.md), [Points of Interest](places.md)
 
 :warning: work in progress!
 
-<img src="world_map.png">
-
-# Regions
+<img src="world_regions.png"  style="image-rendering:-webkit-optimize-contrast">
 
 First region &ndash;
 Profundum region &ndash;
@@ -17,8 +15,9 @@ Stiffchub Lake &ndash;
 Chillbrae region &ndash;
 Hiyass Mountain
 
+## World Map
 
-<img src="world_regions.png"  style="image-rendering:-webkit-optimize-contrast">
+<img src="world_map.png">
 
 ## First region
 Dreem Beach &ndash;
@@ -51,7 +50,7 @@ Wettingham
 <img src="r/sw-phucken.png" width="640" style="image-rendering:pixelated">
 
 ## Totory Dunes region
-Cufee Ruins &ndash;
+Cuffe Ruins &ndash;
 Hopstep &ndash;
 Toarch Cave &ndash;
 Totory &ndash;
