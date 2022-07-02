@@ -1,5 +1,5 @@
-# Regions
-See also: [Towns](towns.md), [Shops](shops.md), [Points of Interest](places.md)
+# World
+See also: [Regions](places.md), [Towns](towns.md), [Shops](shops.md)
 
 :warning: work in progress!
 

@@ -1,5 +1,5 @@
 # Towns
-See also: [Regions](map.md), [Shops](shops.md)
+See also: [World](map.md), [Regions](places.md), [Shops](shops.md)
 
 :warning: work in progress!
 

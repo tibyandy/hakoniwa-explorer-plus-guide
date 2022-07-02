@@ -1,5 +1,5 @@
 # Shops
-See also: [Regions](map.md), [Towns](towns.md), [Items](items.md)
+See also: [Towns](towns.md), [Items](items.md)
 
 All Hakoniwa Explorer Plus [towns](towns.md) have equipment and item shops with varying items.
 
