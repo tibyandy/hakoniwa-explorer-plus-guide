@@ -1,5 +1,4 @@
 # World
-> :warning: work in progress!
 
 [Hakoniwa Explorer Plus](../about/what-is.md) world is divided into 9 [regions](places.md). The player journey starts at [Firsttown](towns.md), in the [First region](places.md#first-region). Other regions are initially locked.
 
@@ -87,7 +86,7 @@ Click any region name for more information.
 </div>
     <div markdown="1" class="e">
 
-[Totory Dunes](places.md#totory-dunes)
+[Totory Dunes](places.md#totory-dunes-region)
 </div>
     <div markdown="1" class="sw">
 
