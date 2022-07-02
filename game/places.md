@@ -4,38 +4,46 @@ See also: [Regions](regions.md), [Towns](towns.md), [Shops](shops.md)
 :warning: work in progress!
 
 <style>
-td img { display: block; width: 68px !important; min-width: 68px; }
+td img {
+  display: block;
+  width: 56px !important;
+  min-width: 56px;
+  image-rendering: -webkit-optimize-contrast;    
+}
 tr { position: relative }
-tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
-/* @media only screen and (max-width: 679px) { */
-    tr th:nth-child(n+2) { white-space: pre; padding: 0 2px !important }
-    td { padding: 0 6px !important; }
-    tr th:nth-child(3)::before { content: 'Ene\aStr'; }
-    tr th:nth-child(4)::before { content: 'Trs\aRat'; }
-    tr th:nth-child(5)::before { content: 'Dgn\aSiz'; }
-/* }
-@media only screen and (min-width: 680px) {
-    td { padding-top: 0 !important; padding-bottom: 0 !important }
-    tr th:nth-child(3)::before { content: 'Enemy Strength'; }
-    tr th:nth-child(4)::before { content: 'Treasure Rate'; }
-    tr th:nth-child(5)::before { content: 'Dungeon Size'; }
-*/
-  .columns {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .column {
-      width: 350px;
-  }
-
+td, th { padding: 0 6px !important; }
+tr > :nth-child(1) { padding: 1px !important; width: 56px !important }
+tr th:nth-child(n+3) { white-space: pre; padding: 0 2px !important }
+tr th:nth-child(3)::before { content: 'Ene\aStr'; }
+tr th:nth-child(4)::before { content: 'Trs\aRat'; }
+tr th:nth-child(5)::before { content: 'Dgn\aSiz'; }
+td:nth-child(2) { width: 100%; }
+.post-content h2 { margin: 0 }
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.column {
+  flex: 1;
+  min-width: 340px;
+}
+.lastcolumn {
+  flex: *;
+  height: 1px;
+  min-width: 340px;
+}
+.column img:nth-child(1) { width: 100%; image-rendering: -webkit-optimize-contrast; }
 </style>
 
 <div class="columns">
 <div class="column" markdown="1">
 
 ## First region
+
+![](r/se-first.png)
 
 |                                 | Place                |   |   |    |
 |---------------------------------|----------------------|:-:|:-:|:--:|
@@ -50,7 +58,9 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 </div>
 <div class="column" markdown="1">
 
-## Notternback Forest region
+## Notternback Forest
+
+![](r/c-marbos.png)
 
 |                                 | Place                |   |   |    |
 |---------------------------------|----------------------|:-:|:-:|:--:|
@@ -66,6 +76,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 
 ## Totory Dunes
 
+![](r/e-totory.png)
+
 |                         | Place        | | | |
 |-------------------------|--------------|:-:|:-:|:--:|
 | ![](p/Cuffe_Ruins.png)  | Cuffe Ruins  | 8 | 1 | 14 |
@@ -79,6 +91,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 
 ## Profundum region
 
+![](r/s-profundum.png)
+
 |                             | Place            | | | |
 |-----------------------------|------------------|:-:|:-:|:--:|
 | ![](p/Dreem_Beach.png)      | Dreem Beach      | 2 | 3 | 8  |
@@ -90,6 +104,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 <div class="column" markdown="1">
 
 ## Maggy region
+
+![](r/ne-maggy.png)
 
 |                                 | Place                |    |   |    |
 |---------------------------------|----------------------|:--:|:-:|:--:|
@@ -105,6 +121,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 <div class="column" markdown="1">
 
 ## Phucken Marsh region
+
+![](r/sw-phucken.png)
 
 |                                 | Place                |   |   |     |
 |---------------------------------|----------------------|:-:|:-:|:---:|
@@ -122,6 +140,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 
 ## Stiffchub Lake region
 
+![](r/w-stiffchub.png)
+
 |                                  | Place                 |    |   |     |
 |----------------------------------|-----------------------|:--:|:-:|:---:|
 | ![](p/Chillbrae_Cave.png)        | Chillbrae Cave        | 5  | 5 | 10  |
@@ -134,6 +154,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 <div class="column" markdown="1">
 
 ## Chillbrae region
+
+![](r/nw-chillbrae.png)
 
 |                                 | Place                |   |   |    |
 |---------------------------------|----------------------|:-:|:-:|:--:|
@@ -148,6 +170,8 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 
 ## Hiyass Mountain region
 
+![](r/n-hiyass.png)
+
 |                                | Place               |    |   |    |
 |--------------------------------|---------------------|:--:|:-:|:--:|
 | ![](p/Chillbrae_Snowlands.png) | Chillbrae Snowlands | 4  | 5 | 9  |
@@ -156,4 +180,6 @@ tr > :nth-child(1) { padding: 1px !important; width: 68px !important }
 | ![](p/Maggy_Mines.png)         | Maggy Mines         | 4  | 2 | 14 |
 
 </div>
+
+<div class="lastcolumn"></div>
 </div>
