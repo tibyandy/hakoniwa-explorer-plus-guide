@@ -84,7 +84,7 @@ td:nth-child(2) { width: 100%; }
 </div>
 <div class="column" markdown="1">
 
-## Totory Dunes
+## Totory Dunes Region
 
 ![](r/e-totory.png)
 
