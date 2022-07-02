@@ -1,10 +1,20 @@
 # Hakoniwa Explorer Plus Guide
 TibyAndy's custom guide to the Nintendo Switch Hakoniwa Explorer Plus game!  
-[View guide on GitHub Pages](https://tibyandy.github.io/hakoniwa-explorer-plus-guide)
 
-- [GitHub source](index.md)
+<div style="text-align: center">
+<a href="https://tibyandy.github.io/hakoniwa-explorer-plus-guide"><div style="border: solid 2px #48f; padding: 10px 24px 0; display: inline-block; margin: 4px 2px 20px; border-radius: 24px; font-weight: bold">
 
-- [GitHub Pages Plugins](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins)
+View guide on GitHub Pages!
+
+</div>
+</a>
+</div>
+
+- [View source on GitHub](index.md)
+
+### Development Reference Links
+- [GitHub Pages plugins versions](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins)
+
 
 ## License
 
