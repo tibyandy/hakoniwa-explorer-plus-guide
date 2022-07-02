@@ -30,9 +30,8 @@ h1 { display: none }
 
 ## Game elements
 - Story
-- World
-  - [Regions](game/map.md)
-  - [Points of Interest](game/places.md)
+- [World](game/map.md)
+  - [Regions](game/places.md)
   - [Towns](game/towns.md)
   - [Shops](game/shops.md)
 - [Enemies](game/enemies.md)
