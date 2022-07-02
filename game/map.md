@@ -35,17 +35,17 @@ Click any region name for more information.
 .map_wrap .map { position: absolute; top: 0; align-items: stretch; }
 .map div {
     font-weight: bold;
-    font-size: min(1.5em, 2.5vw);
+    font-size: min(1.5em, 3vw);
     line-height: 1em;
     text-shadow: -0.1vw -0.1vw 0.1vw #000, 0.1vw 0.1vw 0.1vw #000, 0.1vw -0.1vw 0.1vw #000, -0.1vw 0.1vw 0.1vw #000, -0.2vw 0 0.1vw #000, 0.2vw 0 0.1vw #000, 0 0.2vw 0.1vw #000,
     0 -0.2vw 0.1vw #000;
     text-decoration: none;
-/*    background: #0004; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .map a, .map a:hover { text-decoration: none; color: #fff; }
+.map p { margin: 0 }
 .map div a:hover { background: #c36;
     border-radius: 20px;
     box-shadow: -1vw 0 0.01vw 0.8vw #c36, 1vw 0 0.01vw 0.8vw #c36;
