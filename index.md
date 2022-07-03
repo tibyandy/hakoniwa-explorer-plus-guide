@@ -48,7 +48,7 @@ h1 { display: none }
 
 ## Metainfo
 - [Database.html](db/db.html)
-- [Database.md](db/db.md)
+- <a href="db/db.md">Database.md</a>
 
 </div>
 <div class="column" markdown="1">
