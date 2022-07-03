@@ -23,17 +23,17 @@
 | !Trash    |
 
 # Regions
-| Region                  | Cardn |
-|-------------------------|:-----:|
-| !First region           |  SE   |
-| !Profundum region       |   S   |
-| !Totory Dunes region    |   E   |
-| !Phucken Marsh region   |  SW   |
-| !Maggy region           |  NE   |
-| !Chillbrae region       |  NW   |
-| !Stiffchub Lake region  |   W   |
-| !Notternback Forest     |   C   |
-| !Hiyass Mountain region |   N   |
+| Region                  |
+|-------------------------|
+| !First region           |
+| !Profundum region       |
+| !Totory Dunes region    |
+| !Phucken Marsh region   |
+| !Maggy region           |
+| !Chillbrae region       |
+| !Stiffchub Lake region  |
+| !Notternback Forest     |
+| !Hiyass Mountain region |
 
 # Places
 | Type    | Region                 | Name                   | Region2                | EneStr | TrRat |  DgSiz |
