@@ -1,135 +1,27 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'></head><body><script>
-const css = `<style>i {opacity: 0.3; font-style: inherit}
-[title]:hover { 
-    position: relative
-}
-.datatable span:hover {  border-bottom: #666 1px dashed  }
-.datatable a:hover, .datatable a:hover * { 
-    border-bottom: 1px solid !important
-}
-.datatable span { cursor: default }
+<!DOCTYPE html><html><head><title></title><meta charset='utf-8'></head><body><script>
+fetch('../empty.html')
+	.then(x => x.text())
+	.then(html => {
+		const d = document
+		d.write(html)
+		const h = d.head
+		const css = document.createElement('link')
+		css.rel = 'stylesheet'
+		css.href = 'db.css'
+		h.appendChild(css);
 
-[title]::after {
-  content: attr(title);
-  display: none;
-  background-color: #fff;
-  box-shadow: 0 1px 2px #0008;
-  color: #000;
-  text-align: center;
-  border-radius: 5px;
-  padding: 2px 10px 1px;
-  position: absolute;
-  z-index: 1;
-  left: 0px;
-  top: -30px;
-  font-weight: normal;
-  white-space: pre;
-}
+		const scroller = document.createElement('script')
+		scroller.src = '../scroller.js'
+		h.appendChild(scroller);
 
-.datatable span b { color: #060 }
-[title]:hover:after {
-  display: block;
-}
-table { margin: 0 }
-a > b { font-weight: normal; color: #3f3f3f }
-.datatable a {font-weight: bold}
-a:hover { color: #2a7ae2; }
-.datatable a:hover { text-decoration: none }
-.datatable a:hover b { text-decoration: none; color: inherit; }
-td, th, .post-content li { white-space: nowrap; color: #3f3f3f }
+		const db = document.createElement('script')
+		db.src = 'db.js'
+		h.appendChild(db);
 
-.post-content { font-size: 72% }
-
-@media only screen and (max-width: 679px) {
-    td, th, .post-content li { padding: 0.5ch 1.5ch !important }
-}
-@media only screen and (min-width: 680px) {
-    td, th, .post-content li { padding: 1ch 1.3ch !important }
-}
-
-tr th:first-child { text-align: right !important }
-th { font-weight: normal }
-table { width: auto }
-.dt { width: 100%; overflow-x: auto; padding-top: 4ch }
-
-ul { margin: 0 1px 1px 0; }
-.post-content li { display: inline-block; margin: 0 -1px -1px 0; border: 1px solid #e8e8e8; }
-.post-content li:nth-child(odd) { background-color: #f7f7f7; }
-</style>`
-
-    fetch('../empty.html').then(x => x.text()).then(x => {
-        document.write(x)
-        fetch('../db/db.md').then(x => x.text()).then(markdown => {
-            document.querySelector('.post-title').innerHTML = 'database'
-
-            const dbindexes = {}
-            let dbindexid = 0
-
-            datatables = Object.fromEntries(
-                markdown.substring(2).split('\n# ')
-                .map(mdpart => mdpart.split('\n').filter(mdline => mdline.trim()))
-                .map(([ mdh1, mdth, , ...mdtbody ]) => {
-                    const [ dtname, dtalias ] = mdh1.split(': ')
-                    let dtindexid = 0
-                    const [ head, ...body ] = [mdth, ...mdtbody].map(mdtr =>
-                        mdtr.slice(1, -1).trim().split('|').map(mdtd => {
-                            mdtd = mdtd.trim()
-                            if (mdtd[0] === '!') {
-                                const key = mdtd.substring(1)
-                                dbindexes[key] = { id: ++dtindexid, uid: ++dbindexid, dtname, dtalias, key }
-                            }
-                            return mdtd.trim()
-                        })
-                    )
-                    return [ dtname, { head, body, alias: dtalias } ]
-                }))
-
-            const domElem = document.querySelector('.post-content')
-
-            const getBodyCellContent = (value, alias, column = '', domtag) => {
-                if (value[0] === '!') {
-                    value = value.substring(1)
-                    if (dbindexes[value]) {
-                        const { uid, id, dtname, dtalias, key } = dbindexes[value]
-                        const linkId = `${dtalias}${id}`
-                        value = `<span title="Anchor #${linkId} ::  datatable='${dtname}'  id=${id}  uid=${uid}" id="${linkId}"><b>${id})</b> ${value} <b></b></span>`
-                    } else {
-                        value = `<span title="${column}=${value}"><span><b>?????⟩ </b>${value}</span></span>`
-                    }
-                } else if (dbindexes[value]) {
-                    const { uid, id, dtname, dtalias, key } = dbindexes[value]
-                    const linkId = `${dtalias}${id}`
-                    value = `<a title="Link #${linkId} ::  datatable='${dtname}'  id=${id}  uid=${uid}" href="#${linkId}">${id}) <b>${value}</b></a>`
-                } else if (!value) {
-                    value = `<i>${column}</i>`
-                } else {
-                    // value = `${value}</span>`
-                }
-                return `<${domtag}>${value}</${domtag}>`
-            }
-
-            const printDatatableContent = (alias = '_', content) => content[0].length > 1
-                ? '<table class="datatable">\n' +
-                    content.map((row, r) => `  <tr><th>${r || ''}</th>` + row.map((x, i) => {
-                        x = x.trim()
-                        if (!r) return `<th>${x}</th>`
-                        const y = content[0][i]
-                        x = getBodyCellContent(x, alias, y, 'td')
-                        return x
-                    }).join('') + '').join('</tr>\n')
-                    + '</table>\n'
-                : '<ul class="datatable">' + content.slice(1).map(([x]) => {
-                    x = getBodyCellContent(x, alias, content[0][0], 'li')
-                    return x
-                }).join('') + '</ul>'
-            
-            domElem.innerHTML = css + '<b id="datatables">datatables = [</b>' +
-                Object.keys(datatables).map(dtname => ` <b><a href="#${dtname}">'${dtname}'</a></b>`).join(',')
-                + ' <b>]</b>' +
-                Object.entries(datatables).map(([ dtname, { head, body, alias } ]) =>
-                    `<div class="dt"><b id="${dtname}"><a href="#datatables">datatables</a>[ '${dtname}' ] =</b>\n`
-                    + printDatatableContent(alias, [head, ...body])
-            ).join('</div>')
-        })
-    })
+		setTimeout(() => {
+			// movetohash();
+			// const hash = (location.hash || '#').substring(1)
+			// d.getElementById(hash).scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' })
+		}, 100)
+	})
 </script></body></html>

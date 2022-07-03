@@ -99,7 +99,6 @@
 | CashIn   |     ² | !Funky Bag              |     |      |   |   | Anenemy                                                                              |
 | CashIn   |     ² | !Gold Fur               |     |      |   |   | [Naughty] Lyon                                                                       |
 | CashIn   |     ² | !Pretty Stone           |     |      |   |   |                                                                                      |
-| CashIn   |     ² | !Pretty Stone           |     |      |   |   |                                                                                      |
 | CashIn   |     ² | !Sharp Petal            |     |      |   |   | Thunflower?                                                                          |
 | CashIn   | 1000² | !Freeze Petal           |     |      |   |   | Thnowy?                                                                              |
 | CashIn   | 1000² | !Gelatin                |     |      |   |   | Jellee                                                                               |
