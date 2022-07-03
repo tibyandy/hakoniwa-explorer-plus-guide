@@ -3,107 +3,132 @@ const css = `<style>i {opacity: 0.3; font-style: inherit}
 [title]:hover { 
     position: relative
 }
-.datatable :not(a):not(li):hover { 
-    cursor: default; border-bottom: 1px dotted
+.datatable span:hover {  border-bottom: #666 1px dashed  }
+.datatable a:hover, .datatable a:hover * { 
+    border-bottom: 1px solid !important
 }
+.datatable span { cursor: default }
+
 [title]::after {
   content: attr(title);
   display: none;
-  background-color: #cccd;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #0008;
   color: #000;
-  font-style: italic;
   text-align: center;
   border-radius: 5px;
-  padding: 2px 10px;
+  padding: 2px 10px 1px;
   position: absolute;
   z-index: 1;
-  right: 0px;
+  left: 0px;
   top: -30px;
+  font-weight: normal;
+  white-space: pre;
 }
 
-.datatable span span, .datatable span b { color: #060 }
+.datatable span b { color: #060 }
 [title]:hover:after {
   display: block;
 }
 table { margin: 0 }
-a > b { font-weight: normal }
+a > b { font-weight: normal; color: #3f3f3f }
 .datatable a {font-weight: bold}
-.datatable a:hover { text-decoration: none; color: #2a7ae2 }
-.datatable a:hover b { text-decoration: underline; color: #2a7ae2 }
-td, th { padding-top: 0.5ch !important; padding-bottom: 0.5ch !important; white-space: nowrap }
+a:hover { color: #2a7ae2; }
+.datatable a:hover { text-decoration: none }
+.datatable a:hover b { text-decoration: none; color: inherit; }
+td, th, .post-content li { white-space: nowrap; color: #3f3f3f }
 
-@media only screen and (max-width: 680px) {
-    .post-content { font-size: 75% }
-    td, th { padding: 0.5ch 1.5ch !important }
+.post-content { font-size: 72% }
+
+@media only screen and (max-width: 679px) {
+    td, th, .post-content li { padding: 0.5ch 1.5ch !important }
+}
+@media only screen and (min-width: 680px) {
+    td, th, .post-content li { padding: 1ch 1.3ch !important }
 }
 
 tr th:first-child { text-align: right !important }
 th { font-weight: normal }
 table { width: auto }
-.dt { width: 100%; overflow-x: auto; margin-top: 4ch }
+.dt { width: 100%; overflow-x: auto; padding-top: 4ch }
 
 ul { margin: 0 1px 1px 0; }
-li { display: inline-block; padding: 0.5ch 1.5ch !important; border: solid 1px; margin: 0 -1px -1px 0;
-    border: 1px solid #e8e8e8;
-}
-li:nth-child(odd) {
-    background-color: #f7f7f7;
-}
+.post-content li { display: inline-block; margin: 0 -1px -1px 0; border: 1px solid #e8e8e8; }
+.post-content li:nth-child(odd) { background-color: #f7f7f7; }
 </style>`
 
     fetch('../empty.html').then(x => x.text()).then(x => {
         document.write(x)
-        fetch('../db/db.md').then(x => x.text()).then(db => {
+        fetch('../db/db.md').then(x => x.text()).then(markdown => {
             document.querySelector('.post-title').innerHTML = 'database'
-            const hotlinks = []
-            db = db.substring(2).split('\n# ')
+
+            const dbindexes = {}
+            let dbindexid = 0
+
             datatables = Object.fromEntries(
-                db.map(d => d.split('\n').filter(x => x.trim())).map(
-                    ([ part, h, , ...b ]) => [
-                        part, [h, ...b].map(
-                            r => r.slice(1, -1).trim().split('|').map(x => {
-                                x = x.trim()
-                                if (x[0] === '!') hotlinks.push(x.substring(1))
-                                return x.trim()
-                            })
-                        )
-                    ]
-                )
-                // .map(({ part, thead, tbody }) => [
-                //     part, tbody.map(r => Object.fromEntries(
-                //         r.map((v, i) => [thead[i], v])
-                //     ))
-                // ])
-            )
+                markdown.substring(2).split('\n# ')
+                .map(mdpart => mdpart.split('\n').filter(mdline => mdline.trim()))
+                .map(([ mdh1, mdth, , ...mdtbody ]) => {
+                    const [ dtname, dtalias ] = mdh1.split(': ')
+                    let dtindexid = 0
+                    const [ head, ...body ] = [mdth, ...mdtbody].map(mdtr =>
+                        mdtr.slice(1, -1).trim().split('|').map(mdtd => {
+                            mdtd = mdtd.trim()
+                            if (mdtd[0] === '!') {
+                                const key = mdtd.substring(1)
+                                dbindexes[key] = { id: ++dtindexid, uid: ++dbindexid, dtname, dtalias, key }
+                            }
+                            return mdtd.trim()
+                        })
+                    )
+                    return [ dtname, { head, body, alias: dtalias } ]
+                }))
 
             const domElem = document.querySelector('.post-content')
 
-            const printDatatableContent = content => content[0].length > 1
+            const getBodyCellContent = (value, alias, column = '', domtag) => {
+                if (value[0] === '!') {
+                    value = value.substring(1)
+                    if (dbindexes[value]) {
+                        const { uid, id, dtname, dtalias, key } = dbindexes[value]
+                        const linkId = `${dtalias}${id}`
+                        value = `<span title="Anchor #${linkId} ::  datatable='${dtname}'  id=${id}  uid=${uid}" id="${linkId}"><b>${id})</b> ${value} <b></b></span>`
+                    } else {
+                        value = `<span title="${column}=${value}"><span><b>?????⟩ </b>${value}</span></span>`
+                    }
+                } else if (dbindexes[value]) {
+                    const { uid, id, dtname, dtalias, key } = dbindexes[value]
+                    const linkId = `${dtalias}${id}`
+                    value = `<a title="Link #${linkId} ::  datatable='${dtname}'  id=${id}  uid=${uid}" href="#${linkId}">${id}) <b>${value}</b></a>`
+                } else if (!value) {
+                    value = `<i>${column}</i>`
+                } else {
+                    // value = `${value}</span>`
+                }
+                return `<${domtag}>${value}</${domtag}>`
+            }
+
+            const printDatatableContent = (alias = '_', content) => content[0].length > 1
                 ? '<table class="datatable">\n' +
                     content.map((row, r) => `  <tr><th>${r || ''}</th>` + row.map((x, i) => {
                         x = x.trim()
                         if (!r) return `<th>${x}</th>`
                         const y = content[0][i]
-                        if (x[0] === '!') x = `<span title="${y}" id="_${hotlinks.indexOf(x.substring(1))}"><span><b>${hotlinks.indexOf(x.substring(1))}⟩ </b>${x.substring(1)}</span></span>`
-                        else if (hotlinks.includes(x)) x = `<a title="${y}" href="#_${hotlinks.indexOf(x)}"><b>${x}</b> » ${hotlinks.indexOf(x)}</a>`
-                        else if (!x) x = `<i>${y}</i>`
-                        else x = `<span title="${y}">${x}</span>`
-                        return `<td>${x}</td>`
+                        x = getBodyCellContent(x, alias, y, 'td')
+                        return x
                     }).join('') + '').join('</tr>\n')
                     + '</table>\n'
                 : '<ul class="datatable">' + content.slice(1).map(([x]) => {
-                    if (x[0] === '!') x = `<span id="_${hotlinks.indexOf(x.substring(1))}"><span><b>${hotlinks.indexOf(x.substring(1))}⟩ </b>${x.substring(1)}</span></span>`
-                    else if (hotlinks.includes(x)) x = `<a href="#_${hotlinks.indexOf(x)}"><b>${x}</b> » ${hotlinks.indexOf(x)}</a>`
-                    else x = `<span>${x}</span>`
-                    return `<li>${x}</li>`
+                    x = getBodyCellContent(x, alias, content[0][0], 'li')
+                    return x
                 }).join('') + '</ul>'
             
             domElem.innerHTML = css + '<b id="datatables">datatables = [</b>' +
                 Object.keys(datatables).map(dtname => ` <b><a href="#${dtname}">'${dtname}'</a></b>`).join(',')
                 + ' <b>]</b>' +
-                Object.entries(datatables).map(([ dtname, datatable ]) =>
+                Object.entries(datatables).map(([ dtname, { head, body, alias } ]) =>
                     `<div class="dt"><b id="${dtname}"><a href="#datatables">datatables</a>[ '${dtname}' ] =</b>\n`
-                    + printDatatableContent(datatable)
+                    + printDatatableContent(alias, [head, ...body])
             ).join('</div>')
         })
     })

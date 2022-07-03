@@ -1,4 +1,4 @@
-# PlaceTypes
+# LocationType: LT
 | Name     |
 |----------|
 | !Town    |
@@ -6,7 +6,7 @@
 ! !Dungeon |
 ! !DgnRand |
 
-# ItemTypes
+# ItemType: IT
 | Type      |
 |-----------|
 | !Attack   |
@@ -22,7 +22,7 @@
 | !Special  |
 | !Trash    |
 
-# Regions
+# Region: R
 | Region                  |
 |-------------------------|
 | !First region           |
@@ -35,54 +35,52 @@
 | !Notternback Forest     |
 | !Hiyass Mountain region |
 
-# Places
-| Type    | Region                 | Name                   | Region2                | EneStr | TrRat |  DgSiz |
-|---------|------------------------|------------------------|------------------------|-------:|------:|-------:|
-| Town    | Chillbrae region       | !Chillbrae             |                        |      1 |     2 |      3 |
-| Town    | First region           | !Firsttown             |                        |      1 |     1 |     14 |
-| Town    | Maggy region           | !Shuzo                 |                        |      1 |     2 |      3 |
-| Town    | Notternback Forest     | !Mundus Arbos          |                        |      1 |     2 |      5 |
-| Town    | Phucken Marsh region   | !Wettingham            |                        |      1 |     1 |      2 |
-| Town    | Profundum region       | !Nawaoki               |                        |      1 |     2 |      3 |
-| Town    | Stiffchub Lake region  | !Stiffchub City        |                        |      1 |     1 |      4 |
-| Town    | Totory Dunes region    | !Totory                |                        |      1 |     1 |      3 |
-| DgnLink | Chillbrae region       | !Chillbrae Cave        | Stiffchub Lake region  |      5 |     5 |     10 |
-| DgnLink | Chillbrae region       | !Chillbrae Snowlands   | Hiyass Mountain region |      4 |     5 |      9 |
-| DgnLink | Chillbrae region       | !Notternback Forest D  | Notternback Forest     |      1 |     2 |     10 |
-| DgnLink | First region           | !Dreem Beach           | Profundum region       |      2 |     3 |      8 |
-| DgnLink | First region           | !Notternback Forest A  | Notternback Forest     |      1 |     3 |     10 |
-| DgnLink | First region           | !Toarch Cave           | Totory Dunes region    |      2 |     4 |      8 |
-| DgnLink | Phucken Marsh region   | !Notternback Forest C  | Notternback Forest     |      2 |     1 |     10 |
-| DgnLink | Phucken Marsh region   | !Stiffchub Mines       | Stiffchub Lake region  |      5 |     5 | 10/16? |
-| DgnLink | Maggy region           | !Maggy Mines           | Hiyass Mountain region |      4 |     2 |     14 |
-| DgnLink | Maggy region           | !Notternback Forest B  | Notternback Forest     |      1 |     1 |     10 |
-| DgnLink | Profundum region       | !Gewfoff Beach         | Phucken Marsh region   |      3 |     4 |      7 |
-| DgnLink | Totory Dunes region    | !Hopstep               | Maggy region           |      3 |     3 |      7 |
-| Dungeon | First region           | !Firstbridge           |                        |      1 |     3 |      4 |
-| Dungeon | First region           | !Twinkell Lighthouse   |                        |      2 |     4 |      8 |
-| Dungeon | Phucken Marsh region   | !Encore Watt Ruins     |                        |      9 |     5 |     14 |
-| Dungeon | Phucken Marsh region   | !Grottee Marsh         |                        |      4 |     2 |     10 |
-| Dungeon | Hiyass Mountain region | !Dafuq Abyss           |                        |     11 |     5 |     14 |
-| Dungeon | Hiyass Mountain region | !Hiyass Mountain       |                        |      6 |     4 |      9 |
-| Dungeon | Maggy region           | !Maggy Cave            |                        |      5 |     5 |     14 |
-| Dungeon | Maggy region           | !Maggy Volcano         |                        |     11 |     4 |      9 |
-| Dungeon | Notternback Forest     | !Riza Ruins            |                        |      7 |     3 |     16 |
-| Dungeon | Phucken Marsh region   | !Phucken Marsh         |                        |      4 |     4 |      9 |
-| Dungeon | Profundum region       | !Profundum Trench      |                        |      8 |     1 |     14 |
-| Dungeon | Stiffchub Lake region  | !Stiffchub Clock Tower |                        |     10 |     1 |     11 |
-| Dungeon | Stiffchub Lake region  | !Stiffchub Lake        |                        |      5 |     5 |     16 |
-| Dungeon | Totory Dunes region    | !Cufee Ruins           |                        |      8 |     1 |     14 |
-| Dungeon | Totory Dunes region    | !Totory Dunes          |                        |      3 |     2 |     10 |
-| DgnRand | Chillbrae region       | !Sweetums Hill         |                        |        |       |        |
-| DgnRand | First region           | !Weerdough Plains      |                        |        |       |        |
-| DgnRand | Phucken Marsh region   | !Tepid Springs         |                        |        |       |        |
-| DgnRand | Maggy region           | !Maggy Temple          |                        |        |       |        |
+# Location: L
+| LocationType | Region                 | Name                   | Region2                | EneStr | TrRat |  DgSiz |
+|--------------|------------------------|------------------------|------------------------|-------:|------:|-------:|
+| Town         | Chillbrae region       | !Chillbrae             |                        |      1 |     2 |      3 |
+| Town         | First region           | !Firsttown             |                        |      1 |     1 |     14 |
+| Town         | Maggy region           | !Shuzo                 |                        |      1 |     2 |      3 |
+| Town         | Notternback Forest     | !Mundus Arbos          |                        |      1 |     2 |      5 |
+| Town         | Phucken Marsh region   | !Wettingham            |                        |      1 |     1 |      2 |
+| Town         | Profundum region       | !Nawaoki               |                        |      1 |     2 |      3 |
+| Town         | Stiffchub Lake region  | !Stiffchub City        |                        |      1 |     1 |      4 |
+| Town         | Totory Dunes region    | !Totory                |                        |      1 |     1 |      3 |
+| DgnLink      | Chillbrae region       | !Chillbrae Cave        | Stiffchub Lake region  |      5 |     5 |     10 |
+| DgnLink      | Chillbrae region       | !Chillbrae Snowlands   | Hiyass Mountain region |      4 |     5 |      9 |
+| DgnLink      | Chillbrae region       | !Notternback Forest D  | Notternback Forest     |      1 |     2 |     10 |
+| DgnLink      | First region           | !Dreem Beach           | Profundum region       |      2 |     3 |      8 |
+| DgnLink      | First region           | !Notternback Forest A  | Notternback Forest     |      1 |     3 |     10 |
+| DgnLink      | First region           | !Toarch Cave           | Totory Dunes region    |      2 |     4 |      8 |
+| DgnLink      | Phucken Marsh region   | !Notternback Forest C  | Notternback Forest     |      2 |     1 |     10 |
+| DgnLink      | Phucken Marsh region   | !Stiffchub Mines       | Stiffchub Lake region  |      5 |     5 | 10/16? |
+| DgnLink      | Maggy region           | !Maggy Mines           | Hiyass Mountain region |      4 |     2 |     14 |
+| DgnLink      | Maggy region           | !Notternback Forest B  | Notternback Forest     |      1 |     1 |     10 |
+| DgnLink      | Profundum region       | !Gewfoff Beach         | Phucken Marsh region   |      3 |     4 |      7 |
+| DgnLink      | Totory Dunes region    | !Hopstep               | Maggy region           |      3 |     3 |      7 |
+| Dungeon      | First region           | !Firstbridge           |                        |      1 |     3 |      4 |
+| Dungeon      | First region           | !Twinkell Lighthouse   |                        |      2 |     4 |      8 |
+| Dungeon      | Phucken Marsh region   | !Encore Watt Ruins     |                        |      9 |     5 |     14 |
+| Dungeon      | Phucken Marsh region   | !Grottee Marsh         |                        |      4 |     2 |     10 |
+| Dungeon      | Hiyass Mountain region | !Dafuq Abyss           |                        |     11 |     5 |     14 |
+| Dungeon      | Hiyass Mountain region | !Hiyass Mountain       |                        |      6 |     4 |      9 |
+| Dungeon      | Maggy region           | !Maggy Cave            |                        |      5 |     5 |     14 |
+| Dungeon      | Maggy region           | !Maggy Volcano         |                        |     11 |     4 |      9 |
+| Dungeon      | Notternback Forest     | !Riza Ruins            |                        |      7 |     3 |     16 |
+| Dungeon      | Phucken Marsh region   | !Phucken Marsh         |                        |      4 |     4 |      9 |
+| Dungeon      | Profundum region       | !Profundum Trench      |                        |      8 |     1 |     14 |
+| Dungeon      | Stiffchub Lake region  | !Stiffchub Clock Tower |                        |     10 |     1 |     11 |
+| Dungeon      | Stiffchub Lake region  | !Stiffchub Lake        |                        |      5 |     5 |     16 |
+| Dungeon      | Totory Dunes region    | !Cufee Ruins           |                        |      8 |     1 |     14 |
+| Dungeon      | Totory Dunes region    | !Totory Dunes          |                        |      3 |     2 |     10 |
+| DgnRand      | Chillbrae region       | !Sweetums Hill         |                        |        |       |        |
+| DgnRand      | First region           | !Weerdough Plains      |                        |        |       |        |
+| DgnRand      | Phucken Marsh region   | !Tepid Springs         |                        |        |       |        |
+| DgnRand      | Maggy region           | !Maggy Temple          |                        |        |       |        |
 
+# Item: I
 
-
-# Items
-
-| Type     |  Cost | Name                    | Use | Shop | § | D | Effects                                                                              |
+| ItemType |  Cost | Name                    | Use | Shop | § | D | Effects                                                                              |
 |----------|------:|-------------------------|:---:|------|---|---|--------------------------------------------------------------------------------------|
 | Attack   |     ? | !Water Bottle           |  5  |      |   |   | [Skill]                                                                              |
 | Attack   |    30 | !Pervy Liquid           |  ?  |      |   | D | ?                                                                                    |
@@ -195,7 +193,7 @@
 | Trash    |     ² | !Wet Scroll             |     |      |   |   | Any Scroll?                                                                          |
 | Trash    |     ² | !Wet Trap               |     |      |   |   | Any Trap                                                                             |
 
-# Equipments
+# Equipment: E
 
 | Type    | Cost | Name                 | Use | Shop | § | D | ATK | DEF | Attributes           | Effects                                          |
 |---------|-----:|----------------------|----:|------|---|---|----:|----:|----------------------|--------------------------------------------------|
@@ -273,7 +271,7 @@
 | gRing   | 2000 | !Experience Ring     |  96 | Toto |   |   |     |   ? | -                    | Exp x2 (Suckubus)                                |
 | gRing   | 2000 | !Pirate Ring         |  96 | Toto |   |   |     |   ? | -                    | Drop x2                                          |
 | gRing   | 2000 | !Sacred Ring         |  96 | Toto |   | D |     |   ? | MHP+96               | Regen HP                                         |
-| gRobe   |  370 | !Sukumizu            |  64 | Nawa |   |   |     |   8 | SKL+24 SPD+32        | Waterresist, Naughty                             |
+| gRobe   |  370 | !Sukumizu (eq)       |  64 | Nawa |   |   |     |   8 | SKL+24 SPD+32        | Waterresist, Naughty                             |
 | gRobe   |  460 | !Battle Tights       |  64 | Nawa |   |   |   8 |  12 | SKL+32 SPD+24        | Naughty                                          |
 | gRobe   | 1060 | !White Sukumizu      |  96 | Nawa |   | D |     |  12 | SKL+24 SPD+32        | Waterresist, Naughty                             |
 | gRobe   | 1190 | !Bunny Suit          |  96 | Nawa |   |   |   8 |  16 | SKL+32 SPD+24        | Naughty                                          |
@@ -290,8 +288,7 @@
 | gShoes  | 1200 | !Sturdy Shoes        |     | Wett |   |   |     |   ? |                      |                                                  |
 | gShoes  | 1400 | !Beerok Shoes        | 128 | Wett |   | D |     |  24 | SPD+32               | Unstickable                                      |
 
-
-# Bosses
+# Boss: B
 
 | Name                 | Area               | Notes             |
 |----------------------|--------------------|-------------------|
@@ -310,9 +307,7 @@
 | !Super Evil Sukumizu | Real Last Boss     |                   |
 | !God                 | World Map          | [Drp] Devil Sword |
 
-
-
-# Enemies
+# Enemy: M
 
 | Type        | Name           | Exp | Where        | Notes                                                                            |
 |-------------|----------------|----:|--------------|----------------------------------------------------------------------------------|
