@@ -26,11 +26,14 @@
             const domElem = document.querySelector('.post-content')
             domElem.style = 'white-space: pre'
             domElem.innerHTML =
-            `<style>i {opacity: 0.5}
-                :not(i)[title]:hover { 
-                    position: relative; cursor: default; border-bottom: 1px dotted #000
+            `<style>i {opacity: 0.3; font-style: inherit}
+                [title]:hover { 
+                    position: relative
                 }
-                :not(i)[title]::after {
+                :not(a)[title]:hover { 
+                    cursor: default; border-bottom: 1px dotted #000
+                }
+                [title]::after {
   content: attr(title);
   display: none;
   background-color: #cccd;
@@ -45,25 +48,36 @@
   top: -30px;
 }
 
-:not(i)[title]:hover:after {
+span[title] span, span[title] b { color: #060 }
+[title]:hover:after {
   display: block;
 }
+
+a > b { font-weight: normal }
+a[title] {font-weight: bold}
+a[title]:hover { text-decoration: none; color: #2a7ae2 }
+a[title]:hover b { text-decoration: underline; color: #2a7ae2 }
+table { width: auto; margin-top: 0.5ch }
+td, th { padding-top: 0.5ch !important; padding-bottom: 0.5ch !important }
+tr th:first-child { text-align: right !important }
+th { font-weight: normal }
             </style>` +
             '<b id="datatables">datatables = [</b>' +
                 Object.keys(datatables).map(dtname => ` "<a href="#${dtname}"><b>${dtname}</b></a>"`).join(',')
             + ' <b>]</b>\n\n' +
             Object.keys(datatables).map(dtname =>
-                `<b id="${dtname}"><a href="#datatables">datatables</a>['${dtname}'] = {</b>\n` +
-                datatables[dtname].map((row, i) => `  ${i}: [ ` + row.map((x, i) => {
+                `<b id="${dtname}"><a href="#datatables">datatables</a>['${dtname}'] =</b>\n<table>` +
+                datatables[dtname].map((row, r) => `  <tr><th>${r || ''}</th>` + row.map((x, i) => {
                     x = x.trim()
+                    if (!r) return `<th>${x}</th>`
                     const y = datatables[dtname][0][i]
-                    if (x[0] === '!') x = `<span title="${y}"><b id="_${hotlinks.indexOf(x.substring(1))}">§${hotlinks.indexOf(x.substring(1))}</b> "${x.substring(1)}"</span>`
-                    else if (hotlinks.includes(x)) x = `<a title="${y}" href="#_${hotlinks.indexOf(x)}"><b>"${x}"</b> §${hotlinks.indexOf(x)}</a>`
-                    else if (!x) x = `<i title="${y}">${y}</i>`
-                    else x = `<span title="${y}">"${x}"</span>`
-                    return x
-                }).join(', ') + ' ]').join(',\n')
-            ).join('\n<b>}</b>\n\n')
+                    if (x[0] === '!') x = `<span title="${y}" id="_${hotlinks.indexOf(x.substring(1))}"><span><b>${hotlinks.indexOf(x.substring(1))}⟩ </b>${x.substring(1)}</span></span>`
+                    else if (hotlinks.includes(x)) x = `<a title="${y}" href="#_${hotlinks.indexOf(x)}"><b>${x}</b> » ${hotlinks.indexOf(x)}</a>`
+                    else if (!x) x = `<i>${y}</i>`
+                    else x = `<span title="${y}">${x}</span>`
+                    return `<td>${x}</td>`
+                }).join('') + '').join('</tr>\n')
+            ).join('\n</table>')
         })
     })
 </script></body></html>

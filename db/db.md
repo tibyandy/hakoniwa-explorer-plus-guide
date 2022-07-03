@@ -1,61 +1,82 @@
+# PlaceTypes
+| Name     |
+|----------|
+| !Town    |
+| !DgnLink |
+! !Dungeon |
+! !DgnRand |
+
+# ItemTypes
+| Type      |
+|-----------|
+| !Attack   |
+| !CashIn   |
+| !Drop     |
+| !RDgn     |
+| !EqItem   |
+| !Hold     |
+| !KeyItem  |
+| !Material |
+| !PermBuff |
+| !Recovery |
+| !Special  |
+| !Trash    |
+
 # Regions
-
-| Region                  | Cardinality |
-|-------------------------|:-----------:|
-| !First region           |     SE      |
-| !Profundum region       |      S      |
-| !Totory Dunes region    |      E      |
-| !Phucken Marsh region   |     SW      |
-| !Maggy region           |     NE      |
-| !Chillbrae region       |     NW      |
-| !Stiffchub Lake region  |      W      |
-| !Notternback Forest     |      C      |
-| !Hiyass Mountain region |      N      |
-
+| Region                  | Cardn |
+|-------------------------|:-----:|
+| !First region           |  SE   |
+| !Profundum region       |   S   |
+| !Totory Dunes region    |   E   |
+| !Phucken Marsh region   |  SW   |
+| !Maggy region           |  NE   |
+| !Chillbrae region       |  NW   |
+| !Stiffchub Lake region  |   W   |
+| !Notternback Forest     |   C   |
+| !Hiyass Mountain region |   N   |
 
 # Places
-
-| Type     | Region                 | Name                   | Region2                | EnemyS | TreasureR |  DSize |
-|----------|------------------------|------------------------|------------------------|-------:|----------:|-------:|
-| Town     | Chillbrae region       | !Chillbrae             |                        |      1 |         2 |      3 |
-| Town     | First region           | !Firsttown             |                        |      1 |         1 |     14 |
-| Town     | Maggy region           | !Shuzo                 |                        |      1 |         2 |      3 |
-| Town     | Notternback Forest     | !Mundus Arbos          |                        |      1 |         2 |      5 |
-| Town     | Phucken Marsh region   | !Wettingham            |                        |      1 |         1 |      2 |
-| Town     | Profundum region       | !Nawaoki               |                        |      1 |         2 |      3 |
-| Town     | Stiffchub Lake region  | !Stiffchub City        |                        |      1 |         1 |      4 |
-| Town     | Totory Dunes region    | !Totory                |                        |      1 |         1 |      3 |
-| Link     | Chillbrae region       | !Chillbrae Cave        | Stiffchub Lake region  |      5 |         5 |     10 |
-| Link     | Chillbrae region       | !Chillbrae Snowlands   | Hiyass Mountain region |      4 |         5 |      9 |
-| Link     | Chillbrae region       | !Notternback Forest D  | Notternback Forest     |      1 |         2 |     10 |
-| Link     | First region           | !Dreem Beach           | Profundum region       |      2 |         3 |      8 |
-| Link     | First region           | !Notternback Forest A  | Notternback Forest     |      1 |         3 |     10 |
-| Link     | First region           | !Toarch Cave           | Totory Dunes region    |      2 |         4 |      8 |
-| Link     | Phucken Marsh region   | !Notternback Forest C  | Notternback Forest     |      2 |         1 |     10 |
-| Link     | Phucken Marsh region   | !Stiffchub Mines       | Stiffchub Lake region  |      5 |         5 | 10/16? |
-| Link     | Maggy region           | !Maggy Mines           | Hiyass Mountain region |      4 |         2 |     14 |
-| Link     | Maggy region           | !Notternback Forest B  | Notternback Forest     |      1 |         1 |     10 |
-| Link     | Profundum region       | !Gewfoff Beach         | Phucken Marsh region   |      3 |         4 |      7 |
-| Link     | Totory Dunes region    | !Hopstep               | Maggy region           |      3 |         3 |      7 |
-| Dungeon  | First region           | !Firstbridge           |                        |      1 |         3 |      4 |
-| Dungeon  | First region           | !Twinkell Lighthouse   |                        |      2 |         4 |      8 |
-| Dungeon  | Phucken Marsh region   | !Encore Watt Ruins     |                        |      9 |         5 |     14 |
-| Dungeon  | Phucken Marsh region   | !Grottee Marsh         |                        |      4 |         2 |     10 |
-| Dungeon  | Hiyass Mountain region | !Dafuq Abyss           |                        |     11 |         5 |     14 |
-| Dungeon  | Hiyass Mountain region | !Hiyass Mountain       |                        |      6 |         4 |      9 |
-| Dungeon  | Maggy region           | !Maggy Cave            |                        |      5 |         5 |     14 |
-| Dungeon  | Maggy region           | !Maggy Volcano         |                        |     11 |         4 |      9 |
-| Dungeon  | Notternback Forest     | !Riza Ruins            |                        |      7 |         3 |     16 |
-| Dungeon  | Phucken Marsh region   | !Phucken Marsh         |                        |      4 |         4 |      9 |
-| Dungeon  | Profundum region       | !Profundum Trench      |                        |      8 |         1 |     14 |
-| Dungeon  | Stiffchub Lake region  | !Stiffchub Clock Tower |                        |     10 |         1 |     11 |
-| Dungeon  | Stiffchub Lake region  | !Stiffchub Lake        |                        |      5 |         5 |     16 |
-| Dungeon  | Totory Dunes region    | !Cufee Ruins           |                        |      8 |         1 |     14 |
-| Dungeon  | Totory Dunes region    | !Totory Dunes          |                        |      3 |         2 |     10 |
-| RDungeon | Chillbrae region       | !Sweetums Hill         |                        |        |           |        |
-| RDungeon | First region           | !Weerdough Plains      |                        |        |           |        |
-| RDungeon | Phucken Marsh region   | !Tepid Springs         |                        |        |           |        |
-| RDungeon | Maggy region           | !Maggy Temple          |                        |        |           |        |
+| Type    | Region                 | Name                   | Region2                | EneStr | TrRat |  DgSiz |
+|---------|------------------------|------------------------|------------------------|-------:|------:|-------:|
+| Town    | Chillbrae region       | !Chillbrae             |                        |      1 |     2 |      3 |
+| Town    | First region           | !Firsttown             |                        |      1 |     1 |     14 |
+| Town    | Maggy region           | !Shuzo                 |                        |      1 |     2 |      3 |
+| Town    | Notternback Forest     | !Mundus Arbos          |                        |      1 |     2 |      5 |
+| Town    | Phucken Marsh region   | !Wettingham            |                        |      1 |     1 |      2 |
+| Town    | Profundum region       | !Nawaoki               |                        |      1 |     2 |      3 |
+| Town    | Stiffchub Lake region  | !Stiffchub City        |                        |      1 |     1 |      4 |
+| Town    | Totory Dunes region    | !Totory                |                        |      1 |     1 |      3 |
+| DgnLink | Chillbrae region       | !Chillbrae Cave        | Stiffchub Lake region  |      5 |     5 |     10 |
+| DgnLink | Chillbrae region       | !Chillbrae Snowlands   | Hiyass Mountain region |      4 |     5 |      9 |
+| DgnLink | Chillbrae region       | !Notternback Forest D  | Notternback Forest     |      1 |     2 |     10 |
+| DgnLink | First region           | !Dreem Beach           | Profundum region       |      2 |     3 |      8 |
+| DgnLink | First region           | !Notternback Forest A  | Notternback Forest     |      1 |     3 |     10 |
+| DgnLink | First region           | !Toarch Cave           | Totory Dunes region    |      2 |     4 |      8 |
+| DgnLink | Phucken Marsh region   | !Notternback Forest C  | Notternback Forest     |      2 |     1 |     10 |
+| DgnLink | Phucken Marsh region   | !Stiffchub Mines       | Stiffchub Lake region  |      5 |     5 | 10/16? |
+| DgnLink | Maggy region           | !Maggy Mines           | Hiyass Mountain region |      4 |     2 |     14 |
+| DgnLink | Maggy region           | !Notternback Forest B  | Notternback Forest     |      1 |     1 |     10 |
+| DgnLink | Profundum region       | !Gewfoff Beach         | Phucken Marsh region   |      3 |     4 |      7 |
+| DgnLink | Totory Dunes region    | !Hopstep               | Maggy region           |      3 |     3 |      7 |
+| Dungeon | First region           | !Firstbridge           |                        |      1 |     3 |      4 |
+| Dungeon | First region           | !Twinkell Lighthouse   |                        |      2 |     4 |      8 |
+| Dungeon | Phucken Marsh region   | !Encore Watt Ruins     |                        |      9 |     5 |     14 |
+| Dungeon | Phucken Marsh region   | !Grottee Marsh         |                        |      4 |     2 |     10 |
+| Dungeon | Hiyass Mountain region | !Dafuq Abyss           |                        |     11 |     5 |     14 |
+| Dungeon | Hiyass Mountain region | !Hiyass Mountain       |                        |      6 |     4 |      9 |
+| Dungeon | Maggy region           | !Maggy Cave            |                        |      5 |     5 |     14 |
+| Dungeon | Maggy region           | !Maggy Volcano         |                        |     11 |     4 |      9 |
+| Dungeon | Notternback Forest     | !Riza Ruins            |                        |      7 |     3 |     16 |
+| Dungeon | Phucken Marsh region   | !Phucken Marsh         |                        |      4 |     4 |      9 |
+| Dungeon | Profundum region       | !Profundum Trench      |                        |      8 |     1 |     14 |
+| Dungeon | Stiffchub Lake region  | !Stiffchub Clock Tower |                        |     10 |     1 |     11 |
+| Dungeon | Stiffchub Lake region  | !Stiffchub Lake        |                        |      5 |     5 |     16 |
+| Dungeon | Totory Dunes region    | !Cufee Ruins           |                        |      8 |     1 |     14 |
+| Dungeon | Totory Dunes region    | !Totory Dunes          |                        |      3 |     2 |     10 |
+| DgnRand | Chillbrae region       | !Sweetums Hill         |                        |        |       |        |
+| DgnRand | First region           | !Weerdough Plains      |                        |        |       |        |
+| DgnRand | Phucken Marsh region   | !Tepid Springs         |                        |        |       |        |
+| DgnRand | Maggy region           | !Maggy Temple          |                        |        |       |        |
 
 
 
@@ -89,21 +110,21 @@
 | CashIn   | 3500² | !Light Ball             |     |      |   |   | Blue Draggin                                                                         |
 | Drop     |     ² | !Flame Petal            |     |      |   |   | (Sharp Petal on fire) => On Fire => Fire Sword                                       |
 | Drop     |     ² | !Vampire Fang           |     |      |   |   |                                                                                      |
-| RDungeon |     ² | !Goddammit Scroll       |  1  |      |   |   | [Special] Turns chests into monsters                                                 |
-| RDungeon |     ² | !Lucky Scroll           |  1  |      |   |   | [Special] Prevents monster chests                                                    |
-| RDungeon |     ² | !Return Feather         |  1  |      |   |   | [Special] Returns from dungeon                                                       |
-| RDungeon |     ² | !Shop Scroll            |  1  |      |   |   | [Special] Creates a shop                                                             |
-| RDungeon |     ² | !Some Kinda Scroll      |  1  |      |   |   | [Special] Random, including nothing                                                  |
-| RDungeon |     ² | !Stair Scroll           |  1  |      |   |   | [Special] Creates an staircase                                                       |
-| RDungeon |     ² | !Warehouse Pot          |  1  |      |   |   | [Special] Store items                                                                |
-| EqpItem  |   180 | !Grd Repair Kit         |  ?  | _All |   |   | ?                                                                                    |
-| EqpItem  |   180 | !Wpn Repair Kit         |  ?  | _All |   |   | ?                                                                                    |
-| EqpItem  |   500 | !Grd Repair Kit G       |  ?  | _All | § | D | ?                                                                                    |
-| EqpItem  |   500 | !Wpn Repair Kit G       |  ?  | _All | § | D | ?                                                                                    |
-| EqpItem  |   800 | !Grd Enhancement Kit    |  3  | _All |   |   | [Enhance] Defensive, Agile, Heavy, Invigorating, Jumping, Powerful, Sacred, Skillful |
-| EqpItem  |   800 | !Wpn Enhancement Kit    |  3  | _All |   |   | [Enhance] Offensive, Agile, Heavy, Invigorating, Jumping, Powerful, Sacred, Skillful |
-| EqpItem  |  1600 | !Grd Enhancement Kit G  |  3  |      |   | D | [Enhance] Holy, Lightspeed, Sonic, Technical, Impregnable, Invincible, Masochistic   |
-| EqpItem  |  1600 | !Wpn Enhancement Kit G  |  3  |      |   | D | [Enhance] Holy, Lightspeed, Sonic, Technical, Assault, Destructive, Sadistic         |
+| RDgn     |     ² | !Goddammit Scroll       |  1  |      |   |   | [Special] Turns chests into monsters                                                 |
+| RDgn     |     ² | !Lucky Scroll           |  1  |      |   |   | [Special] Prevents monster chests                                                    |
+| RDgn     |     ² | !Return Feather         |  1  |      |   |   | [Special] Returns from dungeon                                                       |
+| RDgn     |     ² | !Shop Scroll            |  1  |      |   |   | [Special] Creates a shop                                                             |
+| RDgn     |     ² | !Some Kinda Scroll      |  1  |      |   |   | [Special] Random, including nothing                                                  |
+| RDgn     |     ² | !Stair Scroll           |  1  |      |   |   | [Special] Creates an staircase                                                       |
+| RDgn     |     ² | !Warehouse Pot          |  1  |      |   |   | [Special] Store items                                                                |
+| EqItem   |   180 | !Grd Repair Kit         |  ?  | _All |   |   | ?                                                                                    |
+| EqItem   |   180 | !Wpn Repair Kit         |  ?  | _All |   |   | ?                                                                                    |
+| EqItem   |   500 | !Grd Repair Kit G       |  ?  | _All | § | D | ?                                                                                    |
+| EqItem   |   500 | !Wpn Repair Kit G       |  ?  | _All | § | D | ?                                                                                    |
+| EqItem   |   800 | !Grd Enhancement Kit    |  3  | _All |   |   | [Enhance] Defensive, Agile, Heavy, Invigorating, Jumping, Powerful, Sacred, Skillful |
+| EqItem   |   800 | !Wpn Enhancement Kit    |  3  | _All |   |   | [Enhance] Offensive, Agile, Heavy, Invigorating, Jumping, Powerful, Sacred, Skillful |
+| EqItem   |  1600 | !Grd Enhancement Kit G  |  3  |      |   | D | [Enhance] Holy, Lightspeed, Sonic, Technical, Impregnable, Invincible, Masochistic   |
+| EqItem   |  1600 | !Wpn Enhancement Kit G  |  3  |      |   | D | [Enhance] Holy, Lightspeed, Sonic, Technical, Assault, Destructive, Sadistic         |
 | Hold     |     ² | !Antisuck Robe          |     |      |   |   | [Cash-In] [Naughty] Prevents vampiric powers                                         |
 | Hold     | 2000² | !Antisuck Robe          |     |      |   |   | [Cash-In] [Naughty] Stifles vampiric powers                                          |
 | KeyItem  |     ² | !Tanning Machine        |     |      |   |   | [???] Somebody may need this                                                         |
@@ -396,4 +417,3 @@
 
 
 
-[eggplant]: #eggplant
