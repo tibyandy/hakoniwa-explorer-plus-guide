@@ -46,6 +46,10 @@ h1 { display: none }
 - Music
 - Credits
 
+## Metainfo
+- [Database.html](db/db.html)
+- [Database.md](db/db.md)
+
 </div>
 <div class="column" markdown="1">
 

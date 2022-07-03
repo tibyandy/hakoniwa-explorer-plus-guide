@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset='utf-8'></head><body><script>
+    fetch('../empty.html').then(x => x.text()).then(x => {
+        document.write(x)
+        fetch('../db/db.md').then(x => x.text()).then(db => {
+            document.querySelector('.post-title').innerHTML = 'database'
+            const hotlinks = []
+            db = db.substring(2).split('\n# ')
+            datatables = Object.fromEntries(
+                db.map(d => d.split('\n').filter(x => x.trim())).map(
+                    ([ part, h, , ...b ]) => [
+                        part, [h, ...b].map(
+                            r => r.slice(1, -1).trim().split('|').map(x => {
+                                x = x.trim()
+                                if (x[0] === '!') hotlinks.push(x.substring(1))
+                                return x.trim()
+                            })
+                        )
+                    ]
+                )
+                // .map(({ part, thead, tbody }) => [
+                //     part, tbody.map(r => Object.fromEntries(
+                //         r.map((v, i) => [thead[i], v])
+                //     ))
+                // ])
+            )
+            const domElem = document.querySelector('.post-content')
+            domElem.style = 'white-space: pre'
+            domElem.innerHTML =
+            `<style>i {opacity: 0.5}
+                :not(i)[title]:hover { 
+                    position: relative; cursor: default; border-bottom: 1px dotted #000
+                }
+                :not(i)[title]::after {
+  content: attr(title);
+  display: none;
+  background-color: #cccd;
+  color: #000;
+  font-style: italic;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 10px;
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: -30px;
+}
+
+:not(i)[title]:hover:after {
+  display: block;
+}
+            </style>` +
+            '<b id="datatables">datatables = [</b>' +
+                Object.keys(datatables).map(dtname => ` "<a href="#${dtname}"><b>${dtname}</b></a>"`).join(',')
+            + ' <b>]</b>\n\n' +
+            Object.keys(datatables).map(dtname =>
+                `<b id="${dtname}"><a href="#datatables">datatables</a>['${dtname}'] = {</b>\n` +
+                datatables[dtname].map((row, i) => `  ${i}: [ ` + row.map((x, i) => {
+                    x = x.trim()
+                    const y = datatables[dtname][0][i]
+                    if (x[0] === '!') x = `<span title="${y}"><b id="_${hotlinks.indexOf(x.substring(1))}">§${hotlinks.indexOf(x.substring(1))}</b> "${x.substring(1)}"</span>`
+                    else if (hotlinks.includes(x)) x = `<a title="${y}" href="#_${hotlinks.indexOf(x)}"><b>"${x}"</b> §${hotlinks.indexOf(x)}</a>`
+                    else if (!x) x = `<i title="${y}">${y}</i>`
+                    else x = `<span title="${y}">"${x}"</span>`
+                    return x
+                }).join(', ') + ' ]').join(',\n')
+            ).join('\n<b>}</b>\n\n')
+        })
+    })
+</script></body></html>
