@@ -71,12 +71,28 @@
 | Dungeon      | Profundum region       | !Profundum Trench      |                        |      8 |     1 |     14 |
 | Dungeon      | Stiffchub Lake region  | !Stiffchub Clock Tower |                        |     10 |     1 |     11 |
 | Dungeon      | Stiffchub Lake region  | !Stiffchub Lake        |                        |      5 |     5 |     16 |
-| Dungeon      | Totory Dunes region    | !Cufee Ruins           |                        |      8 |     1 |     14 |
+| Dungeon      | Totory Dunes region    | !Cuffe Ruins           |                        |      8 |     1 |     14 |
 | Dungeon      | Totory Dunes region    | !Totory Dunes          |                        |      3 |     2 |     10 |
 | DgnRand      | Chillbrae region       | !Sweetums Hill         |                        |        |       |        |
 | DgnRand      | First region           | !Weerdough Plains      |                        |        |       |        |
 | DgnRand      | Phucken Marsh region   | !Tepid Springs         |                        |        |       |        |
 | DgnRand      | Maggy region           | !Maggy Temple          |                        |        |       |        |
+
+# Quest: Q
+| Quests                     | Where to retrieve   | How to clear     |
+|----------------------------|---------------------|------------------|
+| !Take out 8 Rockits        | Firsttown           | Defeat 8 Rockits |
+| !Climb Twinkell Lighthouse | Twinkell Lighthouse | Reach the top    |
+
+# Location_Graph: LG
+| Unlock               | Where               | When     | What                         | With who |
+|----------------------|---------------------|----------|------------------------------|----------|
+| Firsttown            | Main Menu           | Accept   | Start new game               | -        |
+| Firstbridge          | Firsttown           | Accept   | Take out 8 Rockits           | Woman    |
+| Twinkell Lighthouse  | Firsttown           | Complete | Take out 8 Rockits           | Woman    |
+| Toarch Cave          | Firsttown           | Complete | Take out 8 Rockits           | Man      |
+| Dreem Beach          | Twinkell Lighthouse | Look at  | Twinkell Lighthouse top exit | -        |
+| Notternback Forest A | Twinkell Lighthouse | Complete | Climb Twinkell Lighthouse    | Gramps   |
 
 # Item: I
 
@@ -308,88 +324,98 @@
 
 # Enemy: M
 
-| Type        | Name           | Exp | Where        | Notes                                                                            |
-|-------------|----------------|----:|--------------|----------------------------------------------------------------------------------|
-| NPC         | !DILF          |     |              | [Per] Shitty Cape, Shitty Ax? [Drp] Shitty Armor                                 |
-| NPC         | !MILF          |     |              |                                                                                  |
-| NPC         | !Cat           |     |              | [Drp] Raw Fish                                                                   |
-| NPC         | !Gramma        |     |              |                                                                                  |
-| NPC         | !Chick         |     |              |                                                                                  |
-| NPC         | !Sukumizu      |     |              | [Drp] Eggplant, Sukumizu                                                         |
-| NPC         | !Fairy         |  16 |              | [Drp] Storm Staff, Shitty Staff                                                  |
-| NPC         | !Dude          |  16 |              |                                                                                  |
-| Human       | !Evil Sukumizu |     |              |                                                                                  |
-| Human       | !Evil Dude     |  16 |              | [Drp] Freeze Sword, Cold-proof Shield                                            |
-| Human       | !Lil Girl      |     |              |                                                                                  |
-| Human       | !Gnuk Off      |     |              |                                                                                  |
-| Dead People | !Zombie Gramps |     |              |                                                                                  |
-| Dead People | !Zombie Gramma |     |              |                                                                                  |
-| Dead People | !Zombie Man    |     |              |                                                                                  |
-| Dead People | !Zombie MILF   |     |              |                                                                                  |
-| Dead People | !Zombie Guy    |     |              |                                                                                  |
-| Dead People | !Zombie Lady   |     |              |                                                                                  |
-| Dead People | !Zombie Boy    |     |              |                                                                                  |
-| Dead People | !Zombie Girl   |     |              |                                                                                  |
-| Dead People | !Mammy         |  28 | Cuffe Ruins  | [Drp] Pirate Ring, Flame Sword, Bullseye Sword                                   |
-| Dead People | !Pein          |     |              |                                                                                  |
-| Dead People | !Deff          |     |              |                                                                                  |
-| Mimicry     | !Red Mimicat   |  64 |              | [Per] Goddammit Badge - [Drp] Flame Sword, Freeze Sword                          |
-| Mimicry     | !Green Mimicat |  64 |              | [Drp] Heat-proof Shield                                                          |
-| Mimicry     | !Brown Mimicat |     |              | [Drp] Big-ass Grenade                                                            |
-| Mimicry     | !Gold Mimicat  |  64 |              | [Per] Stochastic Badge                                                           |
-| Mimicry     | !Gross Pot     |     |              |                                                                                  |
-| Mimicry     | !Devil Pot     |  48 |              |                                                                                  |
-| Mimicry     | !Cho Anicky    |  32 | Cuffe Ruins  | [Drp] Sturdy Armor                                                               |
-| Mimicry     | !Cho Anickier  |     |              |                                                                                  |
-| Mimicry     | !Cho Anickiest |     |              |                                                                                  |
-| Mimicry     | !Bombrock      |     |              |                                                                                  |
-| Mimicry     | !Bumbrock      |  64 |              | explodes                                                                         |
-| Mimicry     | !Bambrock      |     |              |                                                                                  |
-| Shapeless   | !Rockit        |   2 |              |                                                                                  |
-| Shapeless   | !Muddle        |  24 |              | [Drp] Brown Sludge                                                               |
-| Shapeless   | !Burnie        |  20 |              | Burns                                                                            |
-| Shapeless   | !Freezie       |     |              |                                                                                  |
-| Shapeless   | !Sparklit      |     |              |                                                                                  |
-| Shapeless   | !Mud Golem     |     |              |                                                                                  |
-| Shapeless   | !Poison Golem  |     |              |                                                                                  |
-| Shapeless   | !Clingy        |     |              |                                                                                  |
-| Flying      | !Bampire       |  16 |              | [Per] Vampire Fang                                                               |
-| Flying      | !Nippy         |  16 |              | [Per] Snow Crystal - [Drp] Cold-proof Shield                                     |
-| Flying      | !Suckubus      |     |              |                                                                                  |
-| Flying      | !Sub Angel     |     |              |                                                                                  |
-| Flying      | !Silver Angel  |     |              |                                                                                  |
-| Flying      | !Gold Angel    |     |              |                                                                                  |
-| Beast       | !Scratchy      |  24 | Maggy Temple | [Per] Fluffy Fur                                                                 |
-| Beast       | !Lyon          | 128 |              | [Drp] Sturdy Gloves                                                              |
-| Beast       | !Thief Cat     |  48 | Maggy Temple |                                                                                  |
-| Beast       | !White Rabbit  |     |              |                                                                                  |
-| Beast       | !Sailor Mewn   |     |              |                                                                                  |
-| Reptile     | !Lamia         |  24 | Cuffe Ruins  | [Drp] Normal Sword, Normal Club                                                  |
-| Reptile     | !Wamia         |     |              |                                                                                  |
-| Dragon      | !Red Draggin   |     |              |                                                                                  |
-| Dragon      | !Green Draggin |     |              |                                                                                  |
-| Dragon      | !Blue Draggin  | 128 |              | [Per] Beautiful Jewel                                                            |
-| Plant       | !Thunflower    |     |              | [Per] Sharp Petal                                                                |
-| Plant       | !Blothum       |  24 |              | [Per] Flame Petal                                                                |
-| Plant       | !Thnowy        |     |              |                                                                                  |
-| Plant       | !Womandrake    |     |              |                                                                                  |
-| Plant       | !Nomandrake    |  32 |              | [Per] Leaf Tights                                                                |
-| Insect      | !Beezis        |     |              | [Drp] Caltrop - [Per] Tough Shell                                                |
-| Insect      | !Skeezis       |     |              |                                                                                  |
-| Insect      | !Spiter        |     |              | %Removes eqp on web attack - [Per] Tough Shell - [Drp] [eggplant], Normal Shield |
-| Insect      | !Red Spiter    |  30 |              | %Removes eqp on web attack - [Per] Tough Shell                                   |
-| Fisheries   | !Jellee        |     |              |                                                                                  |
-| Fisheries   | !Jollee        |     |              |                                                                                  |
-| Fisheries   | !Anenemy       |  28 |              | [Per] Funky Bag                                                                  |
-| Fisheries   | !Anonomy       |     |              |                                                                                  |
-| Sweet       | !Bloo          |     |              |                                                                                  |
-| Sweet       | !Broo          |     |              |                                                                                  |
-| Sweet       | !Pooding       |     |              |                                                                                  |
-| Sweet       | !Gooding       |     |              |                                                                                  |
+| Type        | Name           | Exp | Where                            | Notes                                                                            |
+|-------------|----------------|----:|----------------------------------|----------------------------------------------------------------------------------|
+| NPC         | !DILF          |     |                                  | [Per] Shitty Cape, Shitty Ax? [Drp] Shitty Armor                                 |
+| NPC         | !MILF          |     |                                  |                                                                                  |
+| NPC         | !Cat           |     |                                  | [Drp] Raw Fish                                                                   |
+| NPC         | !Gramma        |     |                                  |                                                                                  |
+| NPC         | !Chick         |     |                                  |                                                                                  |
+| NPC         | !Sukumizu      |     |                                  | [Drp] Eggplant, Sukumizu                                                         |
+| NPC         | !Fairy         |  16 |                                  | [Drp] Storm Staff, Shitty Staff                                                  |
+| NPC         | !Dude          |  16 |                                  |                                                                                  |
+| Human       | !Evil Sukumizu |     |                                  |                                                                                  |
+| Human       | !Evil Dude     |  16 |                                  | [Drp] Freeze Sword, Cold-proof Shield                                            |
+| Human       | !Lil Girl      |     |                                  |                                                                                  |
+| Human       | !Gnuk Off      |     |                                  |                                                                                  |
+| Dead People | !Zombie Gramps |     |                                  |                                                                                  |
+| Dead People | !Zombie Gramma |     |                                  |                                                                                  |
+| Dead People | !Zombie Man    |     |                                  |                                                                                  |
+| Dead People | !Zombie MILF   |     |                                  |                                                                                  |
+| Dead People | !Zombie Guy    |     |                                  |                                                                                  |
+| Dead People | !Zombie Lady   |     |                                  |                                                                                  |
+| Dead People | !Zombie Boy    |     |                                  |                                                                                  |
+| Dead People | !Zombie Girl   |     |                                  |                                                                                  |
+| Dead People | !Mammy         |  28 | Cuffe Ruins                      | [Drp] Pirate Ring, Flame Sword, Bullseye Sword                                   |
+| Dead People | !Pein          |     |                                  |                                                                                  |
+| Dead People | !Deff          |     |                                  |                                                                                  |
+| Mimicry     | !Red Mimicat   |  64 |                                  | [Per] Goddammit Badge - [Drp] Flame Sword, Freeze Sword                          |
+| Mimicry     | !Green Mimicat |  64 |                                  | [Drp] Heat-proof Shield                                                          |
+| Mimicry     | !Brown Mimicat |     |                                  | [Drp] Big-ass Grenade                                                            |
+| Mimicry     | !Gold Mimicat  |  64 |                                  | [Per] Stochastic Badge                                                           |
+| Mimicry     | !Gross Pot     |  32 | Twinkell Lighthouse              | ?                                                                                |
+| Mimicry     | !Devil Pot     |  48 |                                  |                                                                                  |
+| Mimicry     | !Cho Anicky    |  32 | Cuffe Ruins                      | [Drp] Sturdy Armor                                                               |
+| Mimicry     | !Cho Anickier  |     |                                  |                                                                                  |
+| Mimicry     | !Cho Anickiest |     |                                  |                                                                                  |
+| Mimicry     | !Bombrock      |     |                                  |                                                                                  |
+| Mimicry     | !Bumbrock      |  64 |                                  | explodes                                                                         |
+| Mimicry     | !Bambrock      |     |                                  |                                                                                  |
+| Shapeless   | !Rockit        |   2 | Firstbridge, Twinkell Lighthouse | ?                                                                                |
+| Shapeless   | !Big Rockit    |  64 | Firstbridge, Twinkell Lighthouse | Not on enemy list on debug room                                                  |
+| Shapeless   | !Muddle        |  24 |                                  | [Drp] Brown Sludge                                                               |
+| Shapeless   | !Burnie        |  20 |                                  | Burns                                                                            |
+| Shapeless   | !Freezie       |     |                                  |                                                                                  |
+| Shapeless   | !Sparklit      |     |                                  |                                                                                  |
+| Shapeless   | !Mud Golem     |     |                                  |                                                                                  |
+| Shapeless   | !Poison Golem  |     |                                  |                                                                                  |
+| Shapeless   | !Clingy        |     |                                  |                                                                                  |
+| Flying      | !Bampire       |  16 |                                  | [Per] Vampire Fang                                                               |
+| Flying      | !Nippy         |  16 |                                  | [Per] Snow Crystal - [Drp] Cold-proof Shield                                     |
+| Flying      | !Suckubus      |     |                                  |                                                                                  |
+| Flying      | !Sub Angel     |     |                                  |                                                                                  |
+| Flying      | !Silver Angel  |     |                                  |                                                                                  |
+| Flying      | !Gold Angel    |     |                                  |                                                                                  |
+| Beast       | !Scratchy      |  24 | Maggy Temple                     | [Per] Fluffy Fur                                                                 |
+| Beast       | !Lyon          | 128 |                                  | [Drp] Sturdy Gloves                                                              |
+| Beast       | !Thief Cat     |  48 | Maggy Temple                     |                                                                                  |
+| Beast       | !White Rabbit  |     |                                  |                                                                                  |
+| Beast       | !Sailor Mewn   |     |                                  |                                                                                  |
+| Reptile     | !Lamia         |  24 | Cuffe Ruins                      | [Drp] Normal Sword, Normal Club                                                  |
+| Reptile     | !Wamia         |     |                                  |                                                                                  |
+| Dragon      | !Red Draggin   |     |                                  |                                                                                  |
+| Dragon      | !Green Draggin |     |                                  |                                                                                  |
+| Dragon      | !Blue Draggin  | 128 |                                  | [Per] Beautiful Jewel                                                            |
+| Plant       | !Thunflower    |     |                                  | [Per] Sharp Petal                                                                |
+| Plant       | !Blothum       |  24 |                                  | [Per] Flame Petal                                                                |
+| Plant       | !Thnowy        |     |                                  |                                                                                  |
+| Plant       | !Womandrake    |     |                                  |                                                                                  |
+| Plant       | !Nomandrake    |  32 |                                  | [Per] Leaf Tights                                                                |
+| Insect      | !Beezis        |     |                                  | [Drp] Caltrop - [Per] Tough Shell                                                |
+| Insect      | !Skeezis       |     |                                  |                                                                                  |
+| Insect      | !Spiter        |     |                                  | %Removes eqp on web attack - [Per] Tough Shell - [Drp] [eggplant], Normal Shield |
+| Insect      | !Red Spiter    |  30 |                                  | %Removes eqp on web attack - [Per] Tough Shell                                   |
+| Fisheries   | !Jellee        |     |                                  |                                                                                  |
+| Fisheries   | !Jollee        |     |                                  |                                                                                  |
+| Fisheries   | !Anenemy       |  28 |                                  | [Per] Funky Bag                                                                  |
+| Fisheries   | !Anonomy       |     |                                  |                                                                                  |
+| Sweet       | !Bloo          |     |                                  |                                                                                  |
+| Sweet       | !Broo          |     |                                  |                                                                                  |
+| Sweet       | !Pooding       |     |                                  |                                                                                  |
+| Sweet       | !Gooding       |     |                                  |                                                                                  |
 
-
-
-
+# Level
+| Level | Exp    | Next  | MHP | MAP | ATK   | DEF   | SKL | SPD    | Notes               |
+|-------|--------|-------|-----|-----|-------|-------|-----|--------|---------------------|
+| 1     | 0      | 8     | 176 | 128 | 68    | 32    | 80  | 192    |                     |
+| 2     | 8      | 9     | 183 | 133 | 69    | 32    | 80  | 193    |                     |
+| 3     | 17     | 10    | 186 | 135 | 70    | 32    | 81  | 194    |                     |
+| 4     | 27     | 11    | 190 | 138 | 94-Eq | 25+Eq | 81  | 187+Eq | Storm.Stf           |
+| 5     | 38     | 12    | 193 | 140 | 71    | 33    | 82  | 196    |                     |
+| 6     | 50     | 13    | 197 | 143 | 72    | 33    | 82  | 197    |                     |
+| 7     | 63     | 15    | 200 | 145 | 84-Eq | 46-Eq | 82  | 198    | St.Staff, Norm.Glov |
+| 11    | <= 140 | >= 21 | 214 | 156 | 87    | 47-Eq | 84  | 202    | Norm.Glov           |
+| 12    | 161    |       |     |     |       |       |     |        |                     |
 
 
 
